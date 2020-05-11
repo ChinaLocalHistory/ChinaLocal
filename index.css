@@ -1,0 +1,114 @@
+body {
+    background-color: cadetblue;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  #container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 800px;
+    height: 600px;
+  }
+  
+  #btn_change_size {
+    position: absolute;
+    height: 30px;
+    left: 10px;
+    top: 10px;
+  }
+
+img{
+    width: 30%;
+}
+
+#desc-container {
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 50px;
+    min-height: 50px;
+    background: #fff;
+    color: #000;
+    border-radius: 3px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .title {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .hoverImage {
+    padding: 0 20px 20px 20px;
+  }
+
+img{
+    max-width: 500px;
+}
+
+
+
+
+
+
+.row{
+
+    display:flex;
+flex-wrap:wrap;
+text-align:center;
+margin:0px auto;
+width:800px;
+
+}
+
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+  
+    width: 100%;
+   max-width: 20%;
+   border: 1px solid green;
+   margin: auto;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .gallery {
+      text-align: center;
+    margin:auto;
+    max-width: 500px;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
