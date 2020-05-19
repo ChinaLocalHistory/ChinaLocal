@@ -3,7 +3,7 @@ var panorama, viewer, container, infospot;
 
 container = document.querySelector( '#container' );
 
-panorama = new PANOLENS.ImagePanorama('https://raw.githubusercontent.com/jw4590/Twinkling/master/P.jpg');
+panorama = new PANOLENS.ImagePanorama('https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/P.jpg');
 
 infospot = new PANOLENS.Infospot( 350, PANOLENS.DataImage.Info );
 infospot.position.set( 5000.00, 3641.87, 108.69 );

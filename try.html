@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partial panorama</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 1000px;
+        height: 400px;
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+    var bounds = [-40,40];
+    var v = pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/P.jpg",
+    "haov": 420,
+    "vaov": 96,
+    "vOffset": 1.17
+});
+    v.setPitchBounds(bounds);
+</script>
+
+</body>
+</html>
