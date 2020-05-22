@@ -1,110 +1,53 @@
 body {
-    background-color: cadetblue;
-    background-size: cover;
-    margin: 0;
+    background-color: white;
     font-family: Arial;
   }
   
-  #container {
-    margin:auto;
-    text-align: center;
-    align-items: center;
-  }
-  
-  #btn_change_size {
-    position: absolute;
-    height: 30px;
-    left: 10px;
-    top: 10px;
-  }
-
-img{
-    width: 30%;
-}
-
-#desc-container {
-    max-width: 200px;
-    max-height: 200px;
-    min-width: 50px;
-    min-height: 50px;
-    background: #fff;
-    color: #000;
-    border-radius: 3px;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .title {
-    font-size: 1.5em;
-    text-align: center;
-    padding: 5px;
-  }
-
-  .hoverImage {
-    padding: 0 20px 20px 20px;
-  }
-
-img{
-    max-width: 500px;
+#pano-container {
+  margin:20px auto;
+  text-align: center;
+  align-items: center;
 }
 
 
+h1{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+  margin: 50px;
+}
 
-
+h3{
+  font-size: 0.7em;
+  text-align: center;
+}
 .row{
-
-display:flex;
-flex-wrap:wrap;
-text-align:center;
-margin:0px auto;
-width:1200px;
-
+  display:flex;
+  flex-wrap: wrap;
+  text-align:center;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: flex-start;
+}
+  /* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 10px; /* Some padding */
+  width: 100px; /* Set a small width */
+}
+  
+.column img:hover {
+  opacity: 1;
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-  /* The grid: Four equal columns that floats next to each other */
-  .column {
+/* Expanding image text */
+#imgtext {
   
-    width: 100%;
-   max-width: 20%;
-   border: 1px solid green;
-   margin: auto;
-  }
-  
-  /* Style the images inside the grid */
-  .column img {
-    opacity: 0.8; 
-    cursor: pointer; 
-  }
-  
-  .column img:hover {
-    opacity: 1;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* The expanding image container */
-  .gallery {
-      text-align: center;
-    margin:auto;
-    max-width: 500px;
-  }
-  
-  /* Expanding image text */
-  #imgtext {
-    
-    color: white;
-    font-size: 20px;
-  }
-  
-  /* Closable button inside the expanded image */
-  .closebtn {
-float: right;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-  }
+  color: white;
+  font-size: 20px;
+}
+
