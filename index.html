@@ -1,66 +1,56 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1">
-    <title>Tangxi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangxi City God Temple</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
-  <div id="overlay" onclick="off()" style="display:none">
-    <img id="expandedImg">
-  </div>
-    <div id="pano-container">
-        <h1>City God Temple</h1>
-        <iframe width="800px" height = "400px" border-style = "none;" scrolling="no" 
-        allowfullscreen="allowfullscreen" src = "https://jw4590.github.io/TangxiCityGodTemple/try.html"></iframe>
-        <div>
-         <a href="try.html"></a>
+    <div id="overlay" onclick="off()" style="display:none">
+        <img id="expandedImg">
+      </div>
+        <div id="pano-container">
+            <h1>City God Temple</h1>
+            <div id="panorama"></div>
         </div>
+    
+    
+    <div class="gallery-row">
+      <div class="gallery-column">
+        <h3>Gate guardian God</h3>
+        <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/Gate%20guardian%20god1.jpg" alt="Gate guardian god" onclick="on(this);">
+      </div>
+      <div class="gallery-column">
+        <h3>Gate guardian God</h3>
+        <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/Gate%20guardian%20god2.jpg" alt="Gate guardian god"  onclick="on(this);">
+      </div>
+      <div class="gallery-column">
+        <h3>City God Temple</h3>
+        <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/City%20God%20Temple.jpg" alt="City God Temple"  onclick="on(this);">
+      </div>
+      <div class="gallery-column">
+        <h3>Protector of Tangxi</h3>
+        <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/Protector%20of%20Tangxi.jpg" alt="Protector of Tangxi"  onclick="on(this);">
+      </div>
+      <div class="gallery-column">
+        <h3>Defender of Our Precious Wu</h3>
+        <img id="Defender of Our Precious Wu" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/Defender%20of%20our%20precious%20Wu.jpg" alt="Protector of Tangxi"  onclick="on(this);">
+      </div>
+    </div>
+    
+    <div id="footer">
+    <br>
+    <br>
+    <br>
+    <br>
     </div>
 
-
-<div class="gallery-row">
-  <div class="gallery-column">
-    <h3>Gate guardian God</h3>
-    <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/Gate%20guardian%20god1.jpg" alt="Gate guardian god" onclick="on(this);">
-  </div>
-  <div class="gallery-column">
-    <h3>Gate guardian God</h3>
-    <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/Gate%20guardian%20god2.jpg" alt="Gate guardian god"  onclick="on(this);">
-  </div>
-  <div class="gallery-column">
-    <h3>City God Temple</h3>
-    <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/City%20God%20Temple.jpg" alt="City God Temple"  onclick="on(this);">
-  </div>
-  <div class="gallery-column">
-    <h3>Protector of Tangxi</h3>
-    <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/Protector%20of%20Tangxi.jpg" alt="Protector of Tangxi"  onclick="on(this);">
-  </div>
-  <div class="gallery-column">
-    <h3>Defender of Our Precious Wu</h3>
-    <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/Defender%20of%20our%20precious%20Wu.jpg" alt="Protector of Tangxi"  onclick="on(this);">
-  </div>
-</div>
-
-<div id="footer">
-<br>
-<br>
-<br>
-<br>
-</div>
+<script type="text/javascript" src="js/index.js"></script>
 </body>
-<script>
- 
-function on(image) {
-  var expandImg = document.getElementById("expandedImg");
-  expandImg.src = image.src;
-  document.getElementById("overlay").style.display = "block";
-  
-}
-
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
-</script>
 </html>

@@ -62,21 +62,12 @@ iframe{
   z-index: 2;
   cursor: pointer;
   text-align:center;
-  vertical-align: middle;
+  vertical-align: middle
 }
 
 #expandedImg{
   height: 60%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin:0;
-  transform: translate(-50%, -50%);
-}
-
-#panorama {
-  width: 800px;
-  height: 400px;
-  padding:0;
-  margin:auto;
+  position: absolute;
+  top: 25%;
+  left: 30%;
 }
