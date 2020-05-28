@@ -1,9 +1,14 @@
-var bounds = [-30,30];
+//a great pannellum tutorial but in Chinese: https://www.jianshu.com/p/fdbcb551d75b 
+
+//generating the panorama
 var v = pannellum.viewer('panorama', {
 "type": "equirectangular",
 "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/P.jpg",
+//angle range of horizontal view
 "haov": 360,
+//angle range of vertical view
 "vaov": 75.9,
+//vertical angle of the whole panorama
 "vOffset": 0,
 //"hotSpotDebug":true,
 "autoLoad":true,
@@ -30,12 +35,17 @@ var v = pannellum.viewer('panorama', {
         "type": "info",
         "text": "Protector of Tangxi (click to show image)",
         "URL": "https://stackoverflow.com/questions/165082/insert-a-link-using-css",
-        
         //"cssClass": "custom-hotspot",
     }
 ]
 });
+
+//set the vertical bounds for the moving range of the view
+var bounds = [-30,30];
 v.setPitchBounds(bounds);
+//to set horizontal bounds for the moving range of the view, use v.setYawBounds()
+
+//generate the hotspots
 function hotspot(hotSpotDiv, args) {
 hotSpotDiv.classList.add('custom-tooltip');
 var span = document.createElement('span');
@@ -46,22 +56,22 @@ span.style.marginLeft = -(span.scrollWidth - hotSpotDiv.offsetWidth) / 2 + 'px';
 span.style.marginTop = -span.scrollHeight - 12 + 'px';
 }
 
-
+//turn on/off the overlay effect
 function on(image) {
     var expandImg = document.getElementById("expandedImg");
     expandImg.src = image.src;
     document.getElementById("overlay").style.display = "block";
     
   }
-  
-  function off() {
-    document.getElementById("overlay").style.display = "none";
-  }
 
-  function expandImg(hotspot,txt){
-    console.log(txt.text);
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+
+//expand img when hotspots onclick, using clickHandlerFunc and clickHandlerArgs
+function expandImg(hotspot,txt){
+    //console.log(txt.text);
     document.title = "index.html";
     img = document.getElementById(txt.text);
-    //console.log(img);
     img.onclick();
 };
