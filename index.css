@@ -83,3 +83,7 @@ iframe{
   transform: translate(-50%, -50%);
 }
 
+/*this is altering the original pannellum css for hotspot popup, remove if causing any issue*/
+div.pnlm-tooltip span{
+  max-width: 300px;
+}
