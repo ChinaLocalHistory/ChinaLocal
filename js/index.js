@@ -10,6 +10,8 @@ var v = pannellum.viewer('panorama', {
 "vaov": 75.9,
 //vertical angle of the whole panorama
 "vOffset": 0,
+//default zoom-in control
+"hfov": 90,
 //"hotSpotDebug":true,
 "autoLoad":true,
 "hotSpots": [
@@ -78,3 +80,8 @@ function expandImg(hotspot,txt){
     img = document.getElementById(txt.text);
     img.onclick();
 };
+
+function myfunc(){
+    var myCircle = document.getElementById('tangxi-A');
+    myCircle.style.fill = "red";
+}

@@ -28,7 +28,7 @@ iframe{
 }
 #panorama {
   width: 800px;
-  height: 400px;
+  height: 600px;
   padding:0;
   margin:auto;
 }
@@ -87,3 +87,13 @@ iframe{
 div.pnlm-tooltip span{
   max-width: 300px;
 }
+
+/*basemap*/
+.basemap-container {
+  margin:40px auto;
+  text-align: center;
+  align-items: center;
+}
+
+
+
