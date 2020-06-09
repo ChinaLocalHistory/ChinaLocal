@@ -14,44 +14,28 @@
 </head>
 
 <body>
-  
+
+<div class="header">
+  <div><a id="logo" href="Home.html">China Local</a></div>
+  <ul class="navigation">
+    <li><a href="About.html">About</a></li>
+    <li><a href="Help.html">Help</a></li>
+    <li><a href="Maps.html">Maps</a></li>
+    <li><a href="Documents.html">Documents</a></li>
+</ul>
+</div>
+
     <!-- overlay for expanded img -->
     <div id="overlay" onclick="off()" style="display:none">
-        <img id="expandedImg">
-    </div>
+      <img id="expandedImg">
+  </div>
 
-    <!-- panorama container  -->
-    <div id="pano-container">
-        <h1>Front Gate</h1>
-        <div id="panorama"></div>
-    </div>
-    
-    <!-- gallery container  -->
-    <div class="gallery-row">
-      <div class="gallery-column">
-        <h3>Gate guardian God<br>门神</h3>
-        <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Gate%20guardian%20god1.jpg" alt="Gate guardian god" onclick="on(this);">
-      </div>
-      <div class="gallery-column">
-        <h3>Gate guardian God<br>门神</h3>
-        <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Gate%20guardian%20god2.jpg" alt="Gate guardian god"  onclick="on(this);">
-      </div>
-      <div class="gallery-column">
-        <h3>City God Temple<br>城隍庙</h3>
-        <img id="City God Temple<br>城隍庙" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/City%20God%20Temple.jpg" alt="City God Temple"  onclick="on(this);">
-      </div>
-      <div class="gallery-column">
-        <h3>Protector of Tangxi<br>仙舟保障</h3>
-        <img id="Protector of Tangxi<br>仙舟保障" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Protector%20of%20Tangxi.jpg" alt="Protector of Tangxi"  onclick="on(this);">
-      </div>
-      <div class="gallery-column">
-        <h3>Defender of Our Precious Wu<br>宝婺屏藩</h3>
-        <img id="Defender of Our Precious Wu<br>宝婺屏藩" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Defender%20of%20our%20precious%20Wu.jpg" alt="Protector of Tangxi"  onclick="on(this);">
-      </div>
-    </div>
-    
+<div class="container">
+    <!-- basemap container  -->
     <div class="basemap-container">
-      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 147 509.43" height="500">
+      <h2>Tangxi City God Temple</h2>
+      <h3>Front Gate</h3>
+      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 147 509.43" height="100%">
         <defs>
             <style>
                 .cls-1 {
@@ -85,6 +69,42 @@
     <text class="cls-2" transform="translate(69.97 448.19)">B</text>
     </svg>
     </div>
+
+
+
+    
+    <!-- panorama container  -->
+    <div id="pano-container">
+        <div id="panorama"></div>
+    </div>
+    
+  </div>
+
+    <!-- gallery container  -->
+    <div class="gallery-row">
+      <div class="gallery-column">
+        <!-- <h4>Gate guardian God<br>门神</h4>  -->
+        <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Gate%20guardian%20god1.jpg" alt="Gate guardian god" onclick="on(this);">
+      </div>
+      <div class="gallery-column">
+        <!-- <h4>Gate guardian God<br>门神</h4>  -->
+        <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Gate%20guardian%20god2.jpg" alt="Gate guardian god"  onclick="on(this);">
+      </div>
+      <div class="gallery-column">
+        <!-- <h4>City God Temple<br>城隍庙</h4>  -->
+        <img id="City God Temple<br>城隍庙" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/City%20God%20Temple.jpg" alt="City God Temple"  onclick="on(this);">
+      </div>
+      <div class="gallery-column">
+        <!-- <h4>Protector of Tangxi<br>仙舟保障</h4>  -->
+        <img id="Protector of Tangxi<br>仙舟保障" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Protector%20of%20Tangxi.jpg" alt="Protector of Tangxi"  onclick="on(this);">
+      </div>
+      <div class="gallery-column">
+        <!-- <h4>Defender of Our Precious Wu<br>宝婺屏藩</h4>  -->
+        <img id="Defender of Our Precious Wu<br>宝婺屏藩" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Defender%20of%20our%20precious%20Wu.jpg" alt="Protector of Tangxi"  onclick="on(this);">
+      </div>
+    </div>
+    
+
 
     <div id="footer">
     <br>
