@@ -3,7 +3,7 @@
 //generating the panorama
 var v = pannellum.viewer('panorama', {
 "type": "equirectangular",
-"panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/P.jpg",
+"panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/FrontGate.jpg",
 //angle range of horizontal view
 "haov": 360,
 //angle range of vertical view
@@ -19,18 +19,18 @@ var v = pannellum.viewer('panorama', {
         "pitch":20.905364366865633,
         "yaw":-4.361632086533733,
         "type": "info",
-        "text": "City God Temple<br>城隍庙",
+        "text": "City God Temple<br>城隍廟",
         "clickHandlerFunc" : expandImg,
-        "clickHandlerArgs" : {"text":"City God Temple<br>城隍庙"},
+        "clickHandlerArgs" : {"text":"City God Temple<br>城隍廟"},
         //"cssClass": "custom-hotspot",
     },
     {
         "pitch": 17.077460768584032,
         "yaw": 27.014870099148276,
         "type": "info",
-        "text": "Defender of Our Precious Wu<br>宝婺屏藩",
+        "text": "Defender of Our Precious Wu<br>寳婺屏藩",
         "clickHandlerFunc" : expandImg,
-        "clickHandlerArgs" : {"text":"Defender of Our Precious Wu<br>宝婺屏藩"},
+        "clickHandlerArgs" : {"text":"Defender of Our Precious Wu<br>寳婺屏藩"},
         //"cssClass": "custom-hotspot",
     },
     {
@@ -56,6 +56,7 @@ hotSpotDiv.classList.add('custom-tooltip');
 var span = document.createElement('span');
 span.innerHTML = args;
 hotSpotDiv.appendChild(span);
+
 span.style.width = span.scrollWidth - 20 + 'px';
 span.style.marginLeft = -(span.scrollWidth - hotSpotDiv.offsetWidth) / 2 + 'px';
 span.style.marginTop = -span.scrollHeight - 12 + 'px';
