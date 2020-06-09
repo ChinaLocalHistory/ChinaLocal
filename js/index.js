@@ -2,52 +2,100 @@
 
 //generating the panorama
 var v = pannellum.viewer('panorama', {
-"type": "equirectangular",
-"panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/FrontGate.jpg",
-//angle range of horizontal view
-"haov": 360,
-//angle range of vertical view
-"vaov": 75.9,
-//vertical angle of the whole panorama
-"vOffset": 0,
-//default zoom-in control
-"hfov": 90,
-//"hotSpotDebug":true,
-"autoLoad":true,
-"hotSpots": [
-    {
-        "pitch":20.905364366865633,
-        "yaw":-4.361632086533733,
-        "type": "info",
-        "text": "City God Temple<br>城隍廟",
-        "clickHandlerFunc" : expandImg,
-        "clickHandlerArgs" : {"text":"City God Temple<br>城隍廟"},
-        //"cssClass": "custom-hotspot",
+    "default":{
+        "firstScene":"front-gate",
+        "author": "JENNY CHANGE THIS",
+        "sceneFadeDuration": 1000
     },
-    {
-        "pitch": 17.077460768584032,
-        "yaw": 27.014870099148276,
-        "type": "info",
-        "text": "Defender of Our Precious Wu<br>寳婺屏藩",
-        "clickHandlerFunc" : expandImg,
-        "clickHandlerArgs" : {"text":"Defender of Our Precious Wu<br>寳婺屏藩"},
-        //"cssClass": "custom-hotspot",
-    },
-    {
-        "pitch": 17.485817327539637,
-        "yaw": -34.36496946053846,
-        "type": "info",
-        "text": "Protector of Tangxi<br>仙舟保障",
-        "clickHandlerFunc" : expandImg,
-        "clickHandlerArgs" : {"text":"Protector of Tangxi<br>仙舟保障"},
-        //"cssClass": "custom-hotspot",
+
+    "scenes":{
+        "front-gate":{
+            "title":"Front Gate",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/FrontGate.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "minPitch":-30,
+            "maxPitch":30,
+            "hotSpots": [
+                {
+                    "pitch":20.905364366865633,
+                    "yaw":-4.361632086533733,
+                    "type": "info",
+                    "text": "City God Temple<br>城隍廟",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":"City God Temple<br>城隍廟"},
+                    //"cssClass": "custom-hotspot",
+                },
+                {
+                    "pitch": 17.077460768584032,
+                    "yaw": 27.014870099148276,
+                    "type": "info",
+                    "text": "Defender of Our Precious Wu<br>寳婺屏藩",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":"Defender of Our Precious Wu<br>寳婺屏藩"},
+                    //"cssClass": "custom-hotspot",
+                },
+                {
+                    "pitch": 17.485817327539637,
+                    "yaw": -34.36496946053846,
+                    "type": "info",
+                    "text": "Protector of Tangxi<br>仙舟保障",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":"Protector of Tangxi<br>仙舟保障"},
+                    //"cssClass": "custom-hotspot",
+                },
+                {
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "opera-stage",
+                    "sceneId": "opera-stage"
+                }
+            ]
+        },
+
+        "opera-stage":{
+            "title":"Opera Stage",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/FrontGate.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+                {
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "front-gate",
+                    "sceneId": "front-gate"
+                }
+            ]
+        }
     }
-]
 });
 
 //set the vertical bounds for the moving range of the view
-var bounds = [-30,30];
-v.setPitchBounds(bounds);
+//var bounds = [-30,30];
+//v.setPitchBounds(bounds);
+
 //to set horizontal bounds for the moving range of the view, use v.setYawBounds()
 
 //generate the hotspots
@@ -85,4 +133,5 @@ function expandImg(hotspot,txt){
 function myfunc(){
     var myCircle = document.getElementById('tangxi-A');
     myCircle.style.fill = "red";
+    v.loadScene("opera-stage");
 }
