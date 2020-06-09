@@ -66,7 +66,7 @@ var v = pannellum.viewer('panorama', {
         "opera-stage":{
             "title":"Opera Stage",
             "type": "equirectangular",
-            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/FrontGate.jpg",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/OperaStage.png",
             //angle range of horizontal view
             "haov": 360,
             //angle range of vertical view
