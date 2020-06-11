@@ -21,7 +21,7 @@ var v = pannellum.viewer('panorama', {
             "vOffset": 0,
             //default zoom-in control
             "hfov": 90,
-            //"hotSpotDebug":true,
+            "hotSpotDebug":true,
             "autoLoad":true,
             "minPitch":-30,
             "maxPitch":30,
@@ -54,10 +54,10 @@ var v = pannellum.viewer('panorama', {
                     //"cssClass": "custom-hotspot",
                 },
                 {
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -18.285253674622176,
+                    "yaw": 177.2863097277794,
                     "type": "scene",
-                    "text": "opera-stage",
+                    "text": "B. Opera Stage",
                     "sceneId": "opera-stage"
                 }
             ]
@@ -77,14 +77,21 @@ var v = pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            //"hotSpotDebug":true,
+            "hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                 {
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -22.056335177232825,
+                    "yaw": 106.1616076075473,
                     "type": "scene",
-                    "text": "front-gate",
+                    "text": "A. Front Gate",
+                    "sceneId": "front-gate"
+                },
+                {
+                    "pitch": -12.733579062821594,
+                    "yaw": 106.09878828500743,
+                    "type": "scene",
+                    "text": "C. Courtyard Near Stage",
                     "sceneId": "front-gate"
                 }
             ]
