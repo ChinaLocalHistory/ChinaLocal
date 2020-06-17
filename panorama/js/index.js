@@ -1,3 +1,70 @@
+var pageScene="frontGate";
+
+//react gallery
+
+class ReactGallery extends React.Component {
+    constructor(...args) {
+      super(...args);
+    }
+    render() {
+      if (pageScene== "frontGate") {
+      return (
+     <div className="gallery-row">
+      <div className="gallery-column">
+      <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Gate%20guardian%20god1.jpg" alt="Gate guardian god" onClick={this.on.bind(this)}></img>
+      </div>
+      <div className="gallery-column">
+      <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Gate%20guardian%20god2.jpg" alt="Gate guardian god" onClick={this.on.bind(this)}></img>
+      </div>
+      <div className="gallery-column">
+      <img id="City God Temple<br>城隍廟" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/City%20God%20Temple.jpg" alt="City God Temple" onClick={this.on.bind(this)}></img>
+      </div>
+      <div className="gallery-column">
+      <img id="Protector of Tangxi<br>仙舟保障" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Protector%20of%20Tangxi.jpg" alt="Protector of Tangxi"  onClick={this.on.bind(this)}></img>
+      </div>
+      <div className="gallery-column">
+      <img id="Defender of Our Precious Wu<br>寳婺屏藩" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Defender%20of%20our%20precious%20Wu.jpg" alt="Protector of Tangxi"  onClick={this.on.bind(this)}></img>
+      </div>
+   </div>
+  );
+    }
+    else{
+        return(
+        <div className="gallery-row">
+      <div className="gallery-column">
+      <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Gate%20guardian%20god1.jpg" alt="Gate guardian god" onClick={this.on.bind(this)}></img>
+      </div>
+      <div className="gallery-column">
+      <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Gate%20guardian%20god2.jpg" alt="Gate guardian god" onClick={this.on.bind(this)}></img>
+      </div>
+      <div className="gallery-column">
+      <img id="City God Temple<br>城隍廟" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/City%20God%20Temple.jpg" alt="City God Temple" onClick={this.on.bind(this)}></img>
+      </div>
+      <div className="gallery-column">
+      <img id="Protector of Tangxi<br>仙舟保障" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Protector%20of%20Tangxi.jpg" alt="Protector of Tangxi"  onClick={this.on.bind(this)}></img>
+      </div>
+      
+   </div>
+        )
+    }
+  }
+     on(image) {
+      var expandImg = document.getElementById("expandedImg");
+      console.log(image.target.src);
+      expandImg.src = image.target.src;
+      document.getElementById("overlay").style.display = "block";
+    }
+  }
+  
+  
+  const gallery = <ReactGallery/>;
+  //const domContainer = document.querySelector('#react-gallery');
+  ReactDOM.render(gallery, document.getElementById('react-gallery'));
+
+
+
+
+
 //a great pannellum tutorial but in Chinese: https://www.jianshu.com/p/fdbcb551d75b 
 
 //generating the panorama
@@ -12,7 +79,7 @@ var v = pannellum.viewer('panorama', {
         "front-gate":{
             "title":"Front Gate",
             "type": "equirectangular",
-            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/FrontGate.jpg",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/FrontGate.jpg",
             //angle range of horizontal view
             "haov": 360,
             //angle range of vertical view
@@ -67,7 +134,7 @@ var v = pannellum.viewer('panorama', {
         "opera-stage":{
             "title":"Opera Stage",
             "type": "equirectangular",
-            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/OperaStage.jpg",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/OperaStage.jpg",
             //angle range of horizontal view
             "haov": 360,
             //angle range of vertical view
@@ -140,6 +207,7 @@ function expandImg(hotspot,txt){
 };
 
 function toFrontGate(){
+    var i;
     var currentSceneTxt = document.getElementById('currentScene');
     currentSceneTxt.innerText="A. Front Gate";
     var myCircles = document.getElementsByClassName('cls-1');
@@ -149,18 +217,26 @@ function toFrontGate(){
     var myCircle = document.getElementById('tangxi-A');
     myCircle.style.fill = "#F26E22";
     v.loadScene("front-gate");
+    pageScene="frontGate";
+    const frontgallery = <ReactGallery/>;
+    ReactDOM.render(frontgallery, document.getElementById('react-gallery'));
 }
 
 function toOperaStage(){
     var currentSceneTxt = document.getElementById('currentScene');
     currentSceneTxt.innerText="B. Opera Stage";
     var myCircles = document.getElementsByClassName('cls-1');
+    var i;
     for(i=0;i<myCircles.length;i++){
         myCircles[i].style.fill="#023859";
     }
     var myCircle = document.getElementById('tangxi-B');
     myCircle.style.fill = "#F26E22";
     v.loadScene("opera-stage");
+    pageScene="operaStage";
+    console.log(pageScene);
+    const operagallery = <ReactGallery/>;
+    ReactDOM.render(operagallery, document.getElementById('react-gallery'));
 }
 
 
@@ -168,40 +244,6 @@ function toOperaStage(){
 
 
 
-const e = React.createElement;
 
-class LikeButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { liked: false };
-  }
 
-  render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
 
-    return (
-   <div class="gallery-row">
-   <div class="gallery-column">
-      <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Gate%20guardian%20god1.jpg" alt="Gate guardian god" onclick="on(this);"></img>
-   </div>
-   <div class="gallery-column">
-     <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Gate%20guardian%20god2.jpg" alt="Gate guardian god"  onclick="on(this);"></img>
-   </div>
-   <div class="gallery-column">
-     <img id="City God Temple<br>城隍廟" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/City%20God%20Temple.jpg" alt="City God Temple"  onclick="on(this);"></img>
-   </div>
-   <div class="gallery-column">
-     <img id="Protector of Tangxi<br>仙舟保障" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Protector%20of%20Tangxi.jpg" alt="Protector of Tangxi"  onclick="on(this);"></img>
-   </div>
-   <div class="gallery-column">
-     <img id="Defender of Our Precious Wu<br>寳婺屏藩" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Defender%20of%20our%20precious%20Wu.jpg" alt="Protector of Tangxi"  onclick="on(this);"></img>
-   </div>
- </div>
-);
-  }
-}
-
-const domContainer = document.querySelector('#react-button');
-ReactDOM.render(e(LikeButton), domContainer);
