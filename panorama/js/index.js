@@ -21,7 +21,7 @@ var v = pannellum.viewer('panorama', {
             "vOffset": 0,
             //default zoom-in control
             "hfov": 90,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "minPitch":-30,
             "maxPitch":30,
@@ -58,7 +58,8 @@ var v = pannellum.viewer('panorama', {
                     "yaw": 177.2863097277794,
                     "type": "scene",
                     "text": "B. Opera Stage",
-                    "sceneId": "opera-stage"
+                    "sceneId": "opera-stage",
+                    "clickHandlerFunc" : toOperaStage,
                 }
             ]
         },
@@ -77,7 +78,7 @@ var v = pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                 {
@@ -85,14 +86,15 @@ var v = pannellum.viewer('panorama', {
                     "yaw": 106.1616076075473,
                     "type": "scene",
                     "text": "A. Front Gate",
-                    "sceneId": "front-gate"
+                    "sceneId": "front-gate",
+                    "clickHandlerFunc" : toOperaStage,
                 },
                 {
                     "pitch": -12.733579062821594,
                     "yaw": 106.09878828500743,
                     "type": "scene",
                     "text": "C. Courtyard Near Stage",
-                    "sceneId": "front-gate"
+                    "sceneId": "front-gate",
                 }
             ]
         }
@@ -132,13 +134,74 @@ function off() {
 //expand img when hotspots onclick, using clickHandlerFunc and clickHandlerArgs
 function expandImg(hotspot,txt){
     //console.log(txt.text);
-    document.title = "index.html";
+    //document.title = "index.html";
     img = document.getElementById(txt.text);
     img.onclick();
 };
 
-function myfunc(){
+function toFrontGate(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="A. Front Gate";
+    var myCircles = document.getElementsByClassName('cls-1');
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
     var myCircle = document.getElementById('tangxi-A');
-    myCircle.style.fill = "red";
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("front-gate");
+}
+
+function toOperaStage(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="B. Opera Stage";
+    var myCircles = document.getElementsByClassName('cls-1');
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('tangxi-B');
+    myCircle.style.fill = "#F26E22";
     v.loadScene("opera-stage");
 }
+
+
+
+
+
+
+const e = React.createElement;
+
+class LikeButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
+  }
+
+  render() {
+    if (this.state.liked) {
+      return 'You liked this.';
+    }
+
+    return (
+   <div class="gallery-row">
+   <div class="gallery-column">
+      <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Gate%20guardian%20god1.jpg" alt="Gate guardian god" onclick="on(this);"></img>
+   </div>
+   <div class="gallery-column">
+     <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Gate%20guardian%20god2.jpg" alt="Gate guardian god"  onclick="on(this);"></img>
+   </div>
+   <div class="gallery-column">
+     <img id="City God Temple<br>城隍廟" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/City%20God%20Temple.jpg" alt="City God Temple"  onclick="on(this);"></img>
+   </div>
+   <div class="gallery-column">
+     <img id="Protector of Tangxi<br>仙舟保障" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Protector%20of%20Tangxi.jpg" alt="Protector of Tangxi"  onclick="on(this);"></img>
+   </div>
+   <div class="gallery-column">
+     <img id="Defender of Our Precious Wu<br>寳婺屏藩" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/img/Defender%20of%20our%20precious%20Wu.jpg" alt="Protector of Tangxi"  onclick="on(this);"></img>
+   </div>
+ </div>
+);
+  }
+}
+
+const domContainer = document.querySelector('#react-button');
+ReactDOM.render(e(LikeButton), domContainer);
