@@ -4,21 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tangxi City God Temple 汤溪城隍庙</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- pannellum css & javaScript -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     
-    <!-- css for this page -->
+    <!-- css  -->
     <link rel="stylesheet" type="text/css" href="index.css">
+    
+    <!-- Load React. -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
-
+    <!-- JavaScript -->
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
-  <!-- Load React. -->
-<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-</head>
+    <script type="text/babel" src="js/react-gallery.js"></script>
+    </head>
 
 <body>
 
@@ -42,7 +44,7 @@
     <div class="basemap-container">
       <h2>Tangxi City God Temple</h2>
       <h3 id="currentScene">A. Front Gate</h3>
-      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 147 509.43" height="100%">
+      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 147 509.43" height="95%" width="95%">
         <defs>
             <style>
                 .cls-1 {
@@ -91,39 +93,8 @@
     
   </div>
 
-    <!-- gallery container  
-    <div class="gallery-row">
-      <div class="gallery-column">
-        <!-- <h4>Gate guardian God<br>门神</h4>  
-        <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Gate%20guardian%20god1.jpg" alt="Gate guardian god" onclick="on(this);">
-      </div>
-      <div class="gallery-column">
-        <!-- <h4>Gate guardian God<br>门神</h4>  
-        <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Gate%20guardian%20god2.jpg" alt="Gate guardian god"  onclick="on(this);">
-      </div>
-      <div class="gallery-column">
-        <!-- <h4>City God Temple<br>城隍廟</h4>  
-        <img id="City God Temple<br>城隍廟" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/City%20God%20Temple.jpg" alt="City God Temple"  onclick="on(this);">
-      </div>
-      <div class="gallery-column">
-        <!-- <h4>Protector of Tangxi<br>仙舟保障</h4>  
-        <img id="Protector of Tangxi<br>仙舟保障" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Protector%20of%20Tangxi.jpg" alt="Protector of Tangxi"  onclick="on(this);">
-      </div>
-      <div class="gallery-column">
-        <!-- <h4>Defender of Our Precious Wu<br>寳婺屏藩</h4>  
-        <img id="Defender of Our Precious Wu<br>寳婺屏藩" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Defender%20of%20our%20precious%20Wu.jpg" alt="Protector of Tangxi"  onclick="on(this);">
-      </div>
-    </div> -->
-
     <div id="react-gallery"></div>
 
-
-    <div id="footer">
-    <br>
-    <br>
-    <br>
-    <br>
-    </div>
 
 <script type="text/babel" src="js/index.js"></script>
 

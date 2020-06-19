@@ -1,74 +1,13 @@
-var pageScene="frontGate";
-
-//react gallery
-
-class ReactGallery extends React.Component {
-    constructor(...args) {
-      super(...args);
-    }
-    render() {
-      if (pageScene== "frontGate") {
-      return (
-     <div className="gallery-row">
-      <div className="gallery-column">
-      <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Gate%20guardian%20god1.jpg" alt="Gate guardian god" onClick={this.on.bind(this)}></img>
-      </div>
-      <div className="gallery-column">
-      <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Gate%20guardian%20god2.jpg" alt="Gate guardian god" onClick={this.on.bind(this)}></img>
-      </div>
-      <div className="gallery-column">
-      <img id="City God Temple<br>城隍廟" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/City%20God%20Temple.jpg" alt="City God Temple" onClick={this.on.bind(this)}></img>
-      </div>
-      <div className="gallery-column">
-      <img id="Protector of Tangxi<br>仙舟保障" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Protector%20of%20Tangxi.jpg" alt="Protector of Tangxi"  onClick={this.on.bind(this)}></img>
-      </div>
-      <div className="gallery-column">
-      <img id="Defender of Our Precious Wu<br>寳婺屏藩" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Defender%20of%20our%20precious%20Wu.jpg" alt="Protector of Tangxi"  onClick={this.on.bind(this)}></img>
-      </div>
-   </div>
-  );
-    }
-    else{
-        return(
-        <div className="gallery-row">
-      <div className="gallery-column">
-      <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Gate%20guardian%20god1.jpg" alt="Gate guardian god" onClick={this.on.bind(this)}></img>
-      </div>
-      <div className="gallery-column">
-      <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Gate%20guardian%20god2.jpg" alt="Gate guardian god" onClick={this.on.bind(this)}></img>
-      </div>
-      <div className="gallery-column">
-      <img id="City God Temple<br>城隍廟" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/City%20God%20Temple.jpg" alt="City God Temple" onClick={this.on.bind(this)}></img>
-      </div>
-      <div className="gallery-column">
-      <img id="Protector of Tangxi<br>仙舟保障" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/Protector%20of%20Tangxi.jpg" alt="Protector of Tangxi"  onClick={this.on.bind(this)}></img>
-      </div>
-      
-   </div>
-        )
-    }
-  }
-     on(image) {
-      var expandImg = document.getElementById("expandedImg");
-      console.log(image.target.src);
-      expandImg.src = image.target.src;
-      document.getElementById("overlay").style.display = "block";
-    }
-  }
-  
-  
-  const gallery = <ReactGallery/>;
-  //const domContainer = document.querySelector('#react-gallery');
-  ReactDOM.render(gallery, document.getElementById('react-gallery'));
-
-
-
+var pageScene="frontGate"; 
+const gallery = <ReactGallery/>;
+//const domContainer = document.querySelector('#react-gallery');
+ReactDOM.render(gallery, document.getElementById('react-gallery'));
 
 
 //a great pannellum tutorial but in Chinese: https://www.jianshu.com/p/fdbcb551d75b 
 
 //generating the panorama
-var v = pannellum.viewer('panorama', {
+pannellum.viewer('panorama', {
     "default":{
         "firstScene":"front-gate",
         "author": "JENNY CHANGE THIS",
@@ -133,6 +72,7 @@ var v = pannellum.viewer('panorama', {
 
         "opera-stage":{
             "title":"Opera Stage",
+            "author": "JENNY CHANGE THIS",
             "type": "equirectangular",
             "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/OperaStage.jpg",
             //angle range of horizontal view
@@ -202,8 +142,8 @@ function off() {
 function expandImg(hotspot,txt){
     //console.log(txt.text);
     //document.title = "index.html";
-    img = document.getElementById(txt.text);
-    img.onclick();
+    var img = document.getElementById(txt.text);
+    on(img);
 };
 
 function toFrontGate(){
