@@ -7,7 +7,7 @@ ReactDOM.render(gallery, document.getElementById('react-gallery'));
 //a great pannellum tutorial but in Chinese: https://www.jianshu.com/p/fdbcb551d75b 
 
 //generating the panorama
-pannellum.viewer('panorama', {
+var v=pannellum.viewer('panorama', {
     "default":{
         "firstScene":"front-gate",
         "author": "JENNY CHANGE THIS",
