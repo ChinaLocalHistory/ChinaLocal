@@ -32,7 +32,7 @@ class ReactGallery extends React.Component {
    </div>
   );
     }
-    else{
+    if (pageScene== "OperaStage") {
         return(
           <div className="gallery-row">
 
@@ -94,7 +94,46 @@ class ReactGallery extends React.Component {
          <p><b>&rarr;</b></p>
          </div>
          </div>);
-        
+    }
+    else{
+      return(
+        <div className="gallery-row">
+
+        <div className="gallery-column">
+        <img id='Bridge%20of%20Necessity.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/'Bridge%20of%20Necessity.jpg'" alt='Bridge%20of%20Necessity.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='Bridge%20of%20Necessity1.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/'Bridge%20of%20Necessity1.jpg'" alt='Bridge%20of%20Necessity1.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20left%20part.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20left%20part.jpg" alt='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20left%20part.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20left%20part1.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20left%20part1.jpg" alt='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20left%20part1.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20left%20part2.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20left%20part2.jpg" alt='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20left%20part2.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part.jpg" alt='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part1.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part1.jpg" alt='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part1.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part2.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part2.jpg" alt='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part2.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part3.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part3.jpg" alt='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part3.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part4.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part4.jpg" alt='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part4.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part5.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part5.jpg" alt='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part5.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20right%20part.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20right%20part.jpg" alt='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20right%20part.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20right%20part1.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20right%20part1.jpg" alt='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20right%20part1.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20right%20part2.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20right%20part2.jpg" alt='Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20right%20part2.jpg'onClick={this.on.bind(this)}></img></div>
+        <div className="gallery-column">
+        <img id='The%20remainder%20of%20an%20old%20tree,%20displayed%20in%20the%20courtyard..jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/The%20remainder%20of%20an%20old%20tree,%20displayed%20in%20the%20courtyard..jpg" alt='The%20remainder%20of%20an%20old%20tree,%20displayed%20in%20the%20courtyard..jpg'onClick={this.on.bind(this)}></img></div>
+
+        <div className="back-button">
+        <p><b>&rarr;</b></p>
+        </div>
+        </div>);
     }
   }
      on(image) {

@@ -33,7 +33,7 @@ var v=pannellum.viewer('panorama', {
             "maxPitch":30,
             "hotSpots": [
                 {
-                    "pitch":20.905364366865633,
+                    "pitch":22.494174945326723,
                     "yaw":-4.361632086533733,
                     "type": "info",
                     "text": "City God Temple<br>城隍廟",
@@ -42,8 +42,8 @@ var v=pannellum.viewer('panorama', {
                     //"cssClass": "custom-hotspot",
                 },
                 {
-                    "pitch": 17.077460768584032,
-                    "yaw": 27.014870099148276,
+                    "pitch": 19.494174945326723,
+                    "yaw": 26.90945113444174,
                     "type": "info",
                     "text": "Defender of Our Precious Wu<br>寳婺屏藩",
                     "clickHandlerFunc" : expandImg,
@@ -51,8 +51,8 @@ var v=pannellum.viewer('panorama', {
                     //"cssClass": "custom-hotspot",
                 },
                 {
-                    "pitch": 17.485817327539637,
-                    "yaw": -34.36496946053846,
+                    "pitch": 19.494174945326723,
+                    "yaw": -34.442750848944804,
                     "type": "info",
                     "text": "Protector of Tangxi<br>仙舟保障",
                     "clickHandlerFunc" : expandImg,
@@ -133,20 +133,6 @@ var v=pannellum.viewer('panorama', {
                 "clickHandlerArgs" : {"text":'Carved,%20painted%20beams%20and%20balcony%20around%20the%20stage.jpg'}
                 },
                 {
-                "pitch": 1, 
-                "yaw": 1, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Carved,%20painted%20beams%20and%20balcony%20around%20the%20stage1.jpg'}
-                },
-                {
-                "pitch": 1, 
-                "yaw": 1, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Carved,%20painted%20beams%20and%20balcony%20around%20the%20stage2.jpg'}
-                },
-                {
                 "pitch": 35.58785801838995, 
                 "yaw": 31.503575979756686, 
                 "type": "info",
@@ -154,11 +140,18 @@ var v=pannellum.viewer('panorama', {
                 "clickHandlerArgs" : {"text":'Ceiling%20and%20carved%20beams1.jpg'}
                 },
                 {
-                "pitch": -3.713967107190457, 
-                "yaw": -127.32325847857254, 
+                "pitch": -4.7338007227490767, 
+                "yaw": -130.79219153044818, 
                 "type": "info",
                 "clickHandlerFunc" : expandImg,
                 "clickHandlerArgs" : {"text":'Day%20Patrol.jpg'}
+                },
+                {
+                "pitch": -4.323439134449426, 
+                "yaw": -117.64825797693533, 
+                "type": "info",
+                "clickHandlerFunc" : expandImg,
+                "clickHandlerArgs" : {"text":'Details%20of%20Day%20Patrol.jpg'}
                 },
                 {
                 "pitch": 33.80892369570187, 
@@ -166,13 +159,6 @@ var v=pannellum.viewer('panorama', {
                 "type": "info",
                 "clickHandlerFunc" : expandImg,
                 "clickHandlerArgs" : {"text":'Decorated%20ceiling.jpg'}
-                },
-                {
-                "pitch": -4.289217461455887, 
-                "yaw": -123.57377460257943, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Details%20of%20Day%20Patrol.jpg'}
                 },
                 {
                 "pitch": 5.917672508033212, 
@@ -189,25 +175,63 @@ var v=pannellum.viewer('panorama', {
                 "clickHandlerArgs" : {"text":'Entrance_exit%20to%20the%20stage%20with%20curtain.jpg'}
                 },
                 {
-                "pitch": -5.417101566026343, 
-                "yaw": -21.859670741185425, 
+                "pitch": -3.125153680300521, 
+                "yaw": -20.294519499776477, 
                 "type": "info",
                 "clickHandlerFunc" : expandImg,
                 "clickHandlerArgs" : {"text":'Night%20Patrol.jpg'}
                 },
                 {
-                "pitch": -4.180236074651212, 
-                "yaw": -26.942914421230967, 
+                "pitch": -2.82274273368337, 
+                "yaw": -32.112330571243625, 
                 "type": "info",
                 "clickHandlerFunc" : expandImg,
                 "clickHandlerArgs" : {"text":'Night%20Patrol1.jpg'}
                 },
                 {
-                "pitch": -3.855919253405619, 
-                "yaw": -29.294624376234125, 
+                "pitch": -11.0907082413663, 
+                "yaw": -24.95899178914949, 
                 "type": "info",
                 "clickHandlerFunc" : expandImg,
                 "clickHandlerArgs" : {"text":'Night%20Patrol2.jpg'}
+                },
+                {
+                "pitch": 21.22700240825661, 
+                "yaw": -76.27342382517517, 
+                "type": "info",
+                "text": "The temple shines again<br>廟貌重光",
+                "clickHandlerFunc" : expandImg,
+                "clickHandlerArgs" : {"text":'The%20temple%20shines%20again.jpg'}
+                },
+            {
+                "pitch": -22.056335177232825,
+                "yaw": 106.1616076075473,
+                "type": "scene",
+                "text": "A. Front Gate",
+                "sceneId": "front-gate",
+                "clickHandlerFunc" : toFrontGate,
+            },
+            {
+                "pitch": -12.733579062821594,
+                "yaw": 106.09878828500743,
+                "type": "scene",
+                "text": "C. Courtyard Near Stage",
+                "sceneId": "front-gate",
+            }
+            /*
+                 {
+                "pitch": 1, 
+                "yaw": 1, 
+                "type": "info",
+                "clickHandlerFunc" : expandImg,
+                "clickHandlerArgs" : {"text":'Carved,%20painted%20beams%20and%20balcony%20around%20the%20stage1.jpg'}
+                },
+                {
+                "pitch": 1, 
+                "yaw": 1, 
+                "type": "info",
+                "clickHandlerFunc" : expandImg,
+                "clickHandlerArgs" : {"text":'Carved,%20painted%20beams%20and%20balcony%20around%20the%20stage2.jpg'}
                 },
                 {
                 "pitch": 1, 
@@ -279,30 +303,79 @@ var v=pannellum.viewer('panorama', {
                 "clickHandlerFunc" : expandImg,
                 "clickHandlerArgs" : {"text":'Panels%20with%20carvings%20on%20the%20stage3.jpg'}
                 },
-                {
-                "pitch": 30.309227183512363, 
-                "yaw": -76.9382929280992, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20temple%20shines%20again.jpg'}
-                },
-            {
-                "pitch": -22.056335177232825,
-                "yaw": 106.1616076075473,
-                "type": "scene",
-                "text": "A. Front Gate",
-                "sceneId": "front-gate",
-                "clickHandlerFunc" : toFrontGate,
-            },
-            {
-                "pitch": -12.733579062821594,
-                "yaw": 106.09878828500743,
-                "type": "scene",
-                "text": "C. Courtyard Near Stage",
-                "sceneId": "front-gate",
-            }
+                */
             ]
-        }
+        },
+        "courtyard-near-stage":{
+            "title":"Courtyard Near Stage",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/FrontGate.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "hotSpotDebug":true,
+            "autoLoad":true,
+            "minPitch":-30,
+            "maxPitch":30,
+            "hotSpots": [
+                {
+                    "pitch":22.494174945326723,
+                    "yaw":-4.361632086533733,
+                    "type": "info",
+                    "text": "City God Temple<br>城隍廟",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":"City God Temple<br>城隍廟"},
+                    //"cssClass": "custom-hotspot",
+                },
+                {
+                    "pitch": 19.494174945326723,
+                    "yaw": 26.90945113444174,
+                    "type": "info",
+                    "text": "Defender of Our Precious Wu<br>寳婺屏藩",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":"Defender of Our Precious Wu<br>寳婺屏藩"},
+                    //"cssClass": "custom-hotspot",
+                },
+                {
+                    "pitch": 19.494174945326723,
+                    "yaw": -34.442750848944804,
+                    "type": "info",
+                    "text": "Protector of Tangxi<br>仙舟保障",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":"Protector of Tangxi<br>仙舟保障"},
+                    //"cssClass": "custom-hotspot",
+                },
+                {
+                    "pitch": 5.7657145086227395,
+                    "yaw": -11.22551496208543,
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":"Gate guardian god2"},
+                    //"cssClass": "custom-hotspot",
+                },
+                {
+                    "pitch": 5.7657145086227395,
+                    "yaw": 2.389447852098916,
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":"Gate guardian god1"},
+                    //"cssClass": "custom-hotspot",
+                },
+                {
+                    "pitch": -18.285253674622176,
+                    "yaw": 177.2863097277794,
+                    "type": "scene",
+                    "text": "B. Opera Stage",
+                    "sceneId": "opera-stage",
+                    "clickHandlerFunc" : toOperaStage,
+                }
+            ]
+        },
     }
 });
 

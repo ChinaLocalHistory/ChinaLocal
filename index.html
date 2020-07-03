@@ -1,1 +1,39 @@
-<a href src="panorama/index.html"></a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>China Locals</title>
+  </head>
+
+<body>
+  <div class="navbar">
+    <a href="#home">
+        <img src="bulogo_white.png" alt="logo" class = "logo">
+        </a>
+      
+    <a href="#home">Home</a>
+    
+    <div class="dropdown">
+      <button class="dropbtn">Sites 
+      </button>
+      <div class="dropdown-content">
+        <a href="panorama\index.html">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div> 
+    <a href="#news">Documents</a>
+    <a href="#home">About</a>
+  </div>
+
+  <div id='myMap' style='width: 100vw; height: 100vh;'></div>
+        
+  <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
+  
+  <script src="index.js"></script>
+
+</body>
+</html>
