@@ -292,15 +292,15 @@ var v=pannellum.viewer('panorama', {
                         "pitch": -11.597696782329445,
                         "yaw": 0.4913498891597825,
                         "type": "scene",
-                        "text": "D. Courtyard Near Main Stage",
-                        "sceneId": "courtyard near-mainstage",
-                        "clickHandlerFunc" : toCourtyardNearMainStage,
+                        "text": "D. Courtyard Near Main Hall",
+                        "sceneId": "courtyard-near-main-hall",
+                        "clickHandlerFunc" : toCourtyardNearMainHall,
                     }
             ]
         },
 
         "courtyard-near-main-hall":{
-            "title":"Courtyard Near Stage",
+            "title":"Courtyard Near Main Hall",
             "type": "equirectangular",
             "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/CourtyardNearMainHall.jpg",
             //angle range of horizontal view
@@ -596,8 +596,8 @@ function toFrontGate(){
     myCircle.style.fill = "#F26E22";
     v.loadScene("front-gate");
     pageScene="frontGate";
-    const frontgallery = <ReactGallery/>;
-    ReactDOM.render(frontgallery, document.getElementById('react-gallery'));
+    const agallery = <ReactGallery/>;
+    ReactDOM.render(agallery, document.getElementById('react-gallery'));
 }
 
 function toOperaStage(){
@@ -613,8 +613,8 @@ function toOperaStage(){
     v.loadScene("opera-stage");
     pageScene="operaStage";
     console.log(pageScene);
-    const operagallery = <ReactGallery/>;
-    ReactDOM.render(operagallery, document.getElementById('react-gallery'));
+    const bgallery = <ReactGallery/>;
+    ReactDOM.render(bgallery, document.getElementById('react-gallery'));
 }
 
 function toCourtyardNearStage(){
@@ -630,13 +630,13 @@ function toCourtyardNearStage(){
     v.loadScene("courtyard-near-stage");
     pageScene="courtyardNearStage";
     console.log(pageScene);
-    const operagallery = <ReactGallery/>;
-    ReactDOM.render(operagallery, document.getElementById('react-gallery'));
+    const cgallery = <ReactGallery/>;
+    ReactDOM.render(cgallery, document.getElementById('react-gallery'));
 }
 
-function toCourtyardNearMainStage(){
+function toCourtyardNearMainHall(){
     var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="C. Courtyard Near Main Hall";
+    currentSceneTxt.innerText="D. Courtyard Near Main Hall";
     var myCircles = document.getElementsByClassName('cls-1');
     var i;
     for(i=0;i<myCircles.length;i++){
@@ -647,8 +647,9 @@ function toCourtyardNearMainStage(){
     v.loadScene("courtyard-near-main-hall");
     pageScene="courtyardNearMainHall";
     console.log(pageScene);
-    const operagallery = <ReactGallery/>;
-    ReactDOM.render(operagallery, document.getElementById('react-gallery'));
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));
+    console.log("y?");
 }
 
 

@@ -6,3 +6,4 @@ To add a new scene:
 4. run reactfile.py with
 	formatGallery(edittxt(readgallery('gallery.txt')),'SCENENAME')
 5. copy the result into react-gallery.js and panorama/index.js
+
