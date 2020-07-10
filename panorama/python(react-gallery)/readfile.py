@@ -40,4 +40,4 @@ def formatGallery(txtList,nameOfScene):
              +'"clickHandlerArgs" : {"text":'+txt +'}\n'
              +'},')
        
-formatGallery(edittxt(readgallery('gallery.txt')),'courtyard-near-main-hall')
+formatGallery(edittxt(readgallery('gallery.txt')),'rear-hall')
