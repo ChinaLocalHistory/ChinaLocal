@@ -26,7 +26,7 @@ function GetMap() {
     //Store some metadata with the pushpin.
     pin.metadata = {
         title: 'Tangxi City God Temple 湯谿縣城隍廟',
-        description: ' <p>这里是湯谿縣城隍廟的简介</p><br><a href="#">Details</a>'
+        description: ' <p>这里是湯谿縣城隍廟的简介</p><br><a href="panorama/index.html">Details</a>'
     };
 
     //Add a click event handler to the pushpin.
