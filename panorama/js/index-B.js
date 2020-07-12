@@ -1,3 +1,4 @@
+toOperaStage();
 var pageScene="operaStage"; 
 const gallery = <ReactGallery/>;
 //const domContainer = document.querySelector('#react-gallery');
