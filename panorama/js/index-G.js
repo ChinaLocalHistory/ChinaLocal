@@ -1,4 +1,4 @@
-var pageScene="frontGate"; 
+var pageScene="mainHallSouth"; 
 const gallery = <ReactGallery/>;
 //const domContainer = document.querySelector('#react-gallery');
 ReactDOM.render(gallery, document.getElementById('react-gallery'));
@@ -9,7 +9,7 @@ ReactDOM.render(gallery, document.getElementById('react-gallery'));
 //generating the panorama
 var v=pannellum.viewer('panorama', {
     "default":{
-        "firstScene":"front-gate",
+        "firstScene":"main-hall-south",
         "author": "JENNY CHANGE THIS",
         "sceneFadeDuration": 1000
     },
