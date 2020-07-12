@@ -971,13 +971,7 @@ var v=pannellum.viewer('panorama', {
                 "clickHandlerFunc" : expandImg,
                 "clickHandlerArgs" : {"text":'Overview%20of%20City%20God%20statue6.jpg'}
                 },
-                {
-                "pitch": 0.3855051111084876, 
-                "yaw": 91.88915165100616, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20City%20God%20statue7.jpg'}
-                },
+               
     
                 {
                 "pitch": 9.863888085279351,
@@ -1054,7 +1048,7 @@ var v=pannellum.viewer('panorama', {
             "pitch": 35.946180255148214,
             "yaw": 175.28319419693827, 
             "type": "info",
-            "text":"'Eternal beneficence left on the people'",
+            "text":"'Eternal beneficence left on the people'<br>'遺愛在民'",
             "clickHandlerFunc" : expandImg,
             "clickHandlerArgs" : {"text":'Eternal%20beneficence%20left%20on%20the%20people.jpg'}
             },
