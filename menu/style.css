@@ -99,11 +99,11 @@ display: block;
   padding: 0;
   margin: 0;
   flex:80%;
-  border: 1px solid var(--primary-color);
+  /* border: 1px solid var(--primary-color); */
 }
-table, th, td {
+/* table, th, td {
   border: 1px solid var(--primary-color);
-}
+} */
 
 table {
   border-spacing: 10px;
@@ -116,3 +116,9 @@ th, td {
 }
 #menu-container tr:nth-child(odd) {
  background-color: #fff;
+}
+
+a{
+  text-decoration: none;
+  text-decoration-color: var(--secondary-color);
+}
