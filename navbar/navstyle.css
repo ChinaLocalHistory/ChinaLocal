@@ -5,14 +5,20 @@
   --fourth-color:#F2935C;
   --just-white:#FFFFFF;
 }
+
 body {
 font-family: Arial, Helvetica, sans-serif;
 margin:0;
+padding:0;
 }
 
+
 .navbar {
+
+  width:100vw;
 overflow: hidden;
 background-color:var(--primary-color);
+
 }
 
 .navbar a {
@@ -20,13 +26,13 @@ float: left;
 font-size:40px;
 color: white;
 text-align: center;
-padding: 14px 16px;
+padding: 5px 14px 8px;
 text-decoration: none;
 }
-.navbar .logo{
 
+.navbar .logo{
 float: left;
-height:45px;
+height: 45px;
 }
 .dropdown {
 float: left;
@@ -38,7 +44,7 @@ font-size: 40px;
 border: none;
 outline: none;
 color: white;
-padding: 14px 16px;
+padding: 5px 14px 8px;
 background-color: inherit;
 font-family: inherit;
 margin: 0;

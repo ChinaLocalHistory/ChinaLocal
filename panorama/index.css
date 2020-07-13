@@ -123,35 +123,10 @@ span.pnlm-pointer {
 width:300px;
 }
 
-/*menu*/
-.navigation{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0; 
-  text-align: center;
-}
-.navigation a{
-  text-decoration: none;
-  display: block;
-  padding: 0.7em;
-  color:white;
-  z-index: 100;
-  position: relative;
-}
-#logo{
-  float:left;
-  color:white;
-  align-self: center;
-  padding: 0.7em;
-  z-index: 100;
-  text-decoration: none;
-}
-
 
 
 .back-button{
+
   color:white;
   font-size: 2em;
   margin-left: auto;
@@ -159,8 +134,12 @@ width:300px;
   position: sticky;
   right:10px;
   bottom:30px;
+  
 }
-
+.back-button a{
+  color:white;
+  text-decoration: none;
+}
 /**
 .pnlm-panorama-info {
   position:sticky;

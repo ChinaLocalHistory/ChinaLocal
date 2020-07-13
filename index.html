@@ -4,30 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
     <title>China Locals</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
 
 <body>
-  <div class="navbar">
-    <a href="..\index.html">
-        <img src="bulogo_white.png" alt="logo" class = "logo">
-        </a>
-      
-    <a href="..\index.html">Home</a>
-    
-    <div class="dropdown">
-      <button class="dropbtn">Sites 
-      </button>
-      <div class="dropdown-content">
-        <a href="menu\index.html">Tangxi City God Temple</a>
-        <a href="#">Coming soon...</a>
-      </div>
-    </div> 
-    <a href="#news">Documents</a>
-    <a href="About\index.html">About</a>
+  <!--Navigation bar-->
+  <div id="nav-placeholder">
+
   </div>
 
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("../navbar/index.html");
+  });
+  </script>
+<!--end of Navigation bar-->
   <div id='myMap' style='width: 100vw; height: 100vh;'></div>
         
   <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>

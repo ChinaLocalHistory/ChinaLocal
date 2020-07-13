@@ -23,19 +23,22 @@
     <!-- JavaScript -->
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script type="text/babel" src="js/react-gallery.js"></script>
-    </heDd>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
 
 <body>
 
-<div class="header">
-  <div><a id="logo" href="Home.html">China Local</a></div>
-  <ul class="navigation">
-    <li><a href="About.html">About</a></li>
-    <li><a href="Help.html">Help</a></li>
-    <li><a href="Maps.html">Maps</a></li>
-    <li><a href="Documents.html">Documents</a></li>
-</ul>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
 </div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("../navbar/index.html");
+});
+</script>
+<!--end of Navigation bar-->
 
     <!-- overlay for expanded img -->
     <div id="overlay" onclick="off()" style="display:none">

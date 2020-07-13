@@ -24,7 +24,7 @@ class ReactGallery extends React.Component {
       </div>
     
       <div className="back-button">
-      <p><b>&rarr;</b></p>
+      <p><b><a href = "..\menu\index.html">&rarr;</a></b></p>
       </div>
    </div>
   );
@@ -87,7 +87,7 @@ class ReactGallery extends React.Component {
           <img id='The%20temple%20shines%20again.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/The%20temple%20shines%20again.jpg" alt='The%20temple%20shines%20again.jpg'onClick={this.on.bind(this)}></img></div>
          
          <div className="back-button">
-         <p><b>&rarr;</b></p>
+         <p><b><a href = "..\menu\index.html">&rarr;</a></b></p>
          </div>
          </div>);
     }
@@ -128,7 +128,7 @@ class ReactGallery extends React.Component {
         <img id='The%20remainder%20of%20an%20old%20tree,%20displayed%20in%20the%20courtyard..jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/courtyard-near-stage/The%20remainder%20of%20an%20old%20tree,%20displayed%20in%20the%20courtyard..jpg" alt='The%20remainder%20of%20an%20old%20tree,%20displayed%20in%20the%20courtyard..jpg'onClick={this.on.bind(this)}></img></div>
 
         <div className="back-button">
-        <p><b>&rarr;</b></p>
+        <p><b><a href = "..\menu\index.html">&rarr;</a></b></p>
         </div>
         </div>);
     }
@@ -201,7 +201,7 @@ class ReactGallery extends React.Component {
         
 
         <div className="back-button">
-        <p><b>&rarr;</b></p>
+        <p><b><a href = "..\menu\index.html">&rarr;</a></b></p>
         </div>
         </div>);
     }
@@ -259,7 +259,7 @@ class ReactGallery extends React.Component {
  <img id='The%20wind%20has%20softened,%20the%20rain%20is%20gentle,%20the%20people%20are%20happy.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/dragon-king-temple/The%20wind%20has%20softened,%20the%20rain%20is%20gentle,%20the%20people%20are%20happy.jpg" alt='The%20wind%20has%20softened,%20the%20rain%20is%20gentle,%20the%20people%20are%20happy.jpg'onClick={this.on.bind(this)}></img></div>
 
 <div className="back-button">
-<p><b>&rarr;</b></p>
+<p><b><a href = "..\menu\index.html">&rarr;</a></b></p>
 </div>
 </div>);
     }
@@ -293,7 +293,7 @@ class ReactGallery extends React.Component {
  <img id='She%20gives%20them%20the%20children%20from%20the%20Buddha%20land%20that%20they%20might%20be%20seeds%20of%20a%20good%20family%20to%20come.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/bearing-children-cloister/She%20gives%20them%20the%20children%20from%20the%20Buddha%20land%20that%20they%20might%20be%20seeds%20of%20a%20good%20family%20to%20come.jpg" alt='She%20gives%20them%20the%20children%20from%20the%20Buddha%20land%20that%20they%20might%20be%20seeds%20of%20a%20good%20family%20to%20come.jpg'onClick={this.on.bind(this)}></img></div>
 
 <div className="back-button">
-<p><b>&rarr;</b></p>
+<p><b><a href = "..\menu\index.html">&rarr;</a></b></p>
 </div>
 </div>);
     }
@@ -338,7 +338,7 @@ class ReactGallery extends React.Component {
        
        
        <div className="back-button">
-       <p><b>&rarr;</b></p>
+       <p><b><a href = "..\menu\index.html">&rarr;</a></b></p>
        </div>
        </div>);
     }
@@ -390,7 +390,7 @@ class ReactGallery extends React.Component {
      
      
      <div className="back-button">
-     <p><b>&rarr;</b></p>
+     <p><b><a href = "..\menu\index.html">&rarr;</a></b></p>
      </div>
      </div>);
   }
@@ -424,7 +424,7 @@ class ReactGallery extends React.Component {
    
    
    <div className="back-button">
-   <p><b>&rarr;</b></p>
+   <p><b><a href = "..\menu\index.html">&rarr;</a></b></p>
    </div>
    </div>);
 }
