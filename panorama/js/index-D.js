@@ -411,7 +411,6 @@ var v=pannellum.viewer('panorama', {
                     "pitch": 6.421861087048415, 
                     "yaw": 146.37781411009325, 
                     "type": "info",
-                    "text":"Overview of Having Children Sanctuary<br>達生菴",
                     "clickHandlerFunc" : expandImg,
                     "clickHandlerArgs" : {"text":'The%20city%20is%20secured.jpg'}
                     },
