@@ -24,7 +24,7 @@ class ReactGallery extends React.Component {
       </div>
     
       <div className="back-button">
-      <p><b><a href = "..\menu\index.html">&rarr;</a></b></p>
+      <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>
       </div>
    </div>
   );
