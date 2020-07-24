@@ -23,19 +23,20 @@
     <!-- JavaScript -->
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script type="text/babel" src="js/react-gallery.js"></script>
-    </heDd>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
 
 <body>
+  <!--Navigation bar-->
+  <div id="nav-placeholder">
 
-    <div class="header">
-        <div><a id="logo" href="https://jw4590.github.io/TangxiCityGodTemple/">Bucknell University</a></div>
-        <ul class="navigation">
-          <li><a href="https://jw4590.github.io/TangxiCityGodTemple/About/">About</a></li>
-          <li><a href="https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">Sites</a></li>
-          <li><a href="https://jw4590.github.io/TangxiCityGodTemple/">Home</a></li>
-          <li><a href="https://jw4590.github.io/TangxiCityGodTemple/Documents/index.html">Documents</a></li>
-      </ul>
-      </div>
+  </div>
+
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("../navbar/index.html");
+  });
+  </script>
       
 
     <!-- overlay for expanded img -->

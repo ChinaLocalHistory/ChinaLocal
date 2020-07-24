@@ -21,23 +21,25 @@ def edittxt(txtList):
 
 def formatGallery(txtList,nameOfScene):
     print(nameOfScene)
+    print("this part is for 'panorama/index.js'")
     print('<div className="gallery-row">\n')
     
     for txt in txtList:
         print(' <div className="gallery-column">')
-        print(' <img '+'id='+txt+' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/'
-          + nameOfScene + '/' + txt + '" alt=' +txt + 'onClick={this.on.bind(this)}></img></div>')
+        print(' <img id="' +txt+ '" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/'
+          + nameOfScene + '/' + txt + '" alt="' +txt + '" onClick={this.on.bind(this)}></img></div>')
     print('\n')
     print('<div className="back-button">\n'+
           '<p><b>&rarr;</b></p>\n'+
           '</div>\n</div>')
     print('\n')
+    print("this part is for 'react-gallery.js'")
     for txt in txtList:
         print('{\n"pitch": 1, \n'
              +'"yaw": 1, \n'
              +'"type": "info",\n'
              +'"clickHandlerFunc" : expandImg,\n'
-             +'"clickHandlerArgs" : {"text":'+txt +'}\n'
+             +'"clickHandlerArgs" : {"text":"'+txt +'"}\n'
              +'},')
        
 formatGallery(edittxt(readgallery('gallery.txt')),'rear-hall')
