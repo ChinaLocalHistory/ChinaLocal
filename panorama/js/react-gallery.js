@@ -86,9 +86,9 @@ class ReactGallery extends React.Component {
           <div className="gallery-column">
           <img id='The%20temple%20shines%20again.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/opera-stage/The%20temple%20shines%20again.jpg" alt='The%20temple%20shines%20again.jpg'onClick={this.on.bind(this)}></img></div>
          
-         <div className="back-button">
-         <p><b>&rarr;</b></p>
-         </div>
+          <div className="back-button">
+      <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>
+      </div>
          </div>);
     }
     if(pageScene=="courtyardNearStage"){
@@ -128,8 +128,8 @@ class ReactGallery extends React.Component {
         <img id='The%20remainder%20of%20an%20old%20tree,%20displayed%20in%20the%20courtyard..jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/courtyard-near-stage/The%20remainder%20of%20an%20old%20tree,%20displayed%20in%20the%20courtyard..jpg" alt='The%20remainder%20of%20an%20old%20tree,%20displayed%20in%20the%20courtyard..jpg'onClick={this.on.bind(this)}></img></div>
 
         <div className="back-button">
-        <p><b>&rarr;</b></p>
-        </div>
+      <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>
+      </div>
         </div>);
     }
     if(pageScene=="courtyardNearMainHall"){
@@ -201,8 +201,8 @@ class ReactGallery extends React.Component {
         
 
         <div className="back-button">
-        <p><b>&rarr;</b></p>
-        </div>
+      <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>
+      </div>
         </div>);
     }
     if(pageScene=="dragonKingTemple"){
@@ -258,9 +258,9 @@ class ReactGallery extends React.Component {
  <div className="gallery-column">
  <img id='The%20wind%20has%20softened,%20the%20rain%20is%20gentle,%20the%20people%20are%20happy.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/dragon-king-temple/The%20wind%20has%20softened,%20the%20rain%20is%20gentle,%20the%20people%20are%20happy.jpg" alt='The%20wind%20has%20softened,%20the%20rain%20is%20gentle,%20the%20people%20are%20happy.jpg'onClick={this.on.bind(this)}></img></div>
 
-<div className="back-button">
-<p><b>&rarr;</b></p>
-</div>
+ <div className="back-button">
+      <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>
+      </div>
 </div>);
     }
     if(pageScene=="bearingChildrenCloister"){
@@ -292,9 +292,9 @@ class ReactGallery extends React.Component {
  <div className="gallery-column">
  <img id='She%20gives%20them%20the%20children%20from%20the%20Buddha%20land%20that%20they%20might%20be%20seeds%20of%20a%20good%20family%20to%20come.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/bearing-children-cloister/She%20gives%20them%20the%20children%20from%20the%20Buddha%20land%20that%20they%20might%20be%20seeds%20of%20a%20good%20family%20to%20come.jpg" alt='She%20gives%20them%20the%20children%20from%20the%20Buddha%20land%20that%20they%20might%20be%20seeds%20of%20a%20good%20family%20to%20come.jpg'onClick={this.on.bind(this)}></img></div>
 
-<div className="back-button">
-<p><b>&rarr;</b></p>
-</div>
+ <div className="back-button">
+      <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>
+      </div>
 </div>);
     }
     if(pageScene=="mainHallSouth"){
@@ -337,9 +337,9 @@ class ReactGallery extends React.Component {
         <img id='Scene%20of%20legend-Sister%20Mei%20Gets%20Justice1.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/main-hall-south/Scene%20of%20legend-Sister%20Mei%20Gets%20Justice1.jpg" alt='Scene%20of%20legend-Sister%20Mei%20Gets%20Justice1.jpg'onClick={this.on.bind(this)}></img></div>
        
        
-       <div className="back-button">
-       <p><b>&rarr;</b></p>
-       </div>
+        <div className="back-button">
+      <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>
+      </div>
        </div>);
     }
     if(pageScene=="mainHallNorth"){
@@ -388,10 +388,9 @@ class ReactGallery extends React.Component {
       <div className="gallery-column">
       <img id='White%20Impermanence%20and%20Black%20Impermanence.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/main-hall-north/White%20Impermanence%20and%20Black%20Impermanence.jpg" alt='White%20Impermanence%20and%20Black%20Impermanence.jpg'onClick={this.on.bind(this)}></img></div>
      
-     
-     <div className="back-button">
-     <p><b>&rarr;</b></p>
-     </div>
+      <div className="back-button">
+      <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>
+      </div>
      </div>);
   }
   if(pageScene=="rearHall"){
@@ -423,9 +422,9 @@ class ReactGallery extends React.Component {
     <img id='Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg" alt='Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg'onClick={this.on.bind(this)}></img></div>
    
    
-   <div className="back-button">
-   <p><b>&rarr;</b></p>
-   </div>
+    <div className="back-button">
+      <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>
+      </div>
    </div>);
 }
 }
