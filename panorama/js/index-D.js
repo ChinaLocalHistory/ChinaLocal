@@ -970,7 +970,13 @@ var v=pannellum.viewer('panorama', {
                 "clickHandlerFunc" : expandImg,
                 "clickHandlerArgs" : {"text":'Overview%20of%20City%20God%20statue6.jpg'}
                 },
-               
+                {
+                    "pitch": 22.977962993774874,
+                    "yaw": 81.43715122252252, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Overview%20of%20City%20God%20statue7.jpg'}
+                    },
     
                 {
                 "pitch": 9.863888085279351,
