@@ -25,11 +25,11 @@ def formatGallery(txtList,nameOfScene):
     
     for txt in txtList:
         print(' <div className="gallery-column">')
-        print(' <img '+'id='+txt+' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/'
+        print(' <img '+'id='+txt+' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/'
           + nameOfScene + '/' + txt + '" alt=' +txt + 'onClick={this.on.bind(this)}></img></div>')
     print('\n')
     print('<div className="back-button">\n'+
-          '<p><b>&rarr;</b></p>\n'+
+          '<p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>'+
           '</div>\n</div>')
     print('\n')
     for txt in txtList:
@@ -40,4 +40,4 @@ def formatGallery(txtList,nameOfScene):
              +'"clickHandlerArgs" : {"text":'+txt +'}\n'
              +'},')
        
-formatGallery(edittxt(readgallery('gallery.txt')),'rear-hall')
+formatGallery(edittxt(readgallery('gallery.txt')),'I%20Arch%20of%20Chastity%20and%20Filial%20Piety%2C%20Jie%20Xiao%20Fang')
