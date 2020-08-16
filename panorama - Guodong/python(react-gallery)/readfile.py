@@ -39,5 +39,33 @@ def formatGallery(txtList,nameOfScene):
              +'"clickHandlerFunc" : expandImg,\n'
              +'"clickHandlerArgs" : {"text":'+txt +'}\n'
              +'},')
-       
-formatGallery(edittxt(readgallery('gallery.txt')),'I%20Arch%20of%20Chastity%20and%20Filial%20Piety%2C%20Jie%20Xiao%20Fang')
+        
+
+def galleryHtml(txtList,nameOfScene):
+    n = 1
+    for txt in txtList:
+        print('<div class="mySlides">')
+        print('<div class="numbertext">' + str(n) +' / 38</div>')
+        print('<img src="'+ 'https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/'
+          + nameOfScene + '/' + txt + '" alt=' +txt + 'style="width:100%">'+
+              '</div>')
+        n+=1
+        print()
+        
+def galleryHtml2(txtList,nameOfScene):
+    print("nest part")
+    x = 1
+    for txt in txtList:
+        print('<div class="column">')
+        print('<img class="demo cursor"'+' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/'
+          + nameOfScene + '/' + txt + '" style="width:100%" onclick="currentSlide(' + str(x) + ') ' + '" alt=' +txt +'></div>')
+        x+=1
+        print()
+
+
+
+
+        
+formatGallery(edittxt(readgallery('gallery.txt')),'N%20Precious%20Spring%20Peak%20Area%2C%20Baoquan%20Yan')
+galleryHtml(edittxt(readgallery('gallery.txt')),'N%20Precious%20Spring%20Peak%20Area%2C%20Baoquan%20Yan')
+galleryHtml2(edittxt(readgallery('gallery.txt')),'N%20Precious%20Spring%20Peak%20Area%2C%20Baoquan%20Yan')

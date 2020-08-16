@@ -26,7 +26,7 @@ var v=pannellum.viewer('panorama', {
             "vOffset": 0,
             //default zoom-in control
             "hfov": 90,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "minPitch":-30,
             "maxPitch":30,
@@ -63,7 +63,7 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                
@@ -106,7 +106,7 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                
@@ -142,7 +142,7 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                
@@ -197,7 +197,7 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
             
@@ -311,7 +311,7 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                 {
@@ -353,7 +353,7 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                 {
@@ -371,14 +371,6 @@ var v=pannellum.viewer('panorama', {
                 "sceneId": "D1",
                 "clickHandlerFunc" : toD1,
             },
-            {
-                "pitch":  -9.587148439340654, 
-                "yaw": -3.018323992792432,
-                "type": "scene",
-                "text": "F1. He Lineage Ancestral Hall--exterior",
-                "sceneId": "F1",
-                "clickHandlerFunc" : toF1,
-            }
             ]
         },
         "F1":{
@@ -395,7 +387,7 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                 
@@ -420,6 +412,7 @@ var v=pannellum.viewer('panorama', {
                     "clickHandlerFunc" : expandImg,
                     "clickHandlerArgs" : {"text":'Overview%20of%20the%20ancestral%20hall.JPG'}
                     },
+
                     
             {
                 "pitch": -17.76186196324729, 
@@ -430,12 +423,12 @@ var v=pannellum.viewer('panorama', {
                 "clickHandlerFunc" : toF2,
             },
             {
-                "pitch": -15.707156225746818,
-                "yaw": 11.364505315070433,
+                "pitch": -16.537738954383254,
+                "yaw": -161.61472158806998,
                 "type": "scene",
-                "text":"E. Path between Sea and Unicorn Chamber and Guodong Primary School",
-                "sceneId": "E",
-                "clickHandlerFunc" : toE,
+                "text": "G. Between He Lineage Ancestral Hall and Xinwu Li",
+                "sceneId": "G",
+                "clickHandlerFunc" : toG,
             }
             ]
         },
@@ -454,7 +447,7 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                 {
@@ -548,7 +541,7 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                 
@@ -676,7 +669,7 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                 
@@ -755,14 +748,7 @@ var v=pannellum.viewer('panorama', {
                 "sceneId": "F3",
                 "clickHandlerFunc" : toF3,
             },
-            {
-                "pitch": -18.395649193030938,
-                "yaw": -178.7425554122671,
-                "type": "scene",
-                "text": "G. Between He Lineage Ancestral Hall and Xinwu Li",
-                "sceneId": "G",
-                "clickHandlerFunc" : toG,
-            }
+            
             ]
         },
 
@@ -781,7 +767,7 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                 
@@ -805,9 +791,9 @@ var v=pannellum.viewer('panorama', {
                 "pitch": -26.58528794474873, 
                 "yaw": 130.91757761892572,
                 "type": "scene",
-                "text": "F4. He Lineage Ancestral Shrine, Back Hall",
-                "sceneId": "F4",
-                "clickHandlerFunc" : toF4,
+                "text": "F1. He Lineage Ancestral Hall--exterior",
+                "sceneId": "F1",
+                "clickHandlerFunc" : toF1,
             }
             ]
         },
@@ -825,7 +811,7 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                 
@@ -876,18 +862,9 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
-               
-            {
-                "pitch": -22.056335177232825,
-                "yaw": 106.1616076075473,
-                "type": "scene",
-                "text": "I. Arch of Chastity and Filial Piety, Jie Xiao Fang",
-                "sceneId": "I",
-                "clickHandlerFunc" : toI,
-            },
             {
                 "pitch": -6.224028266500834,
                 "yaw": 85.91131837122502,
@@ -912,7 +889,7 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                
@@ -938,30 +915,13 @@ var v=pannellum.viewer('panorama', {
                     "clickHandlerFunc" : expandImg,
                     "clickHandlerArgs" : {"text":'Overview%20of%20the%20arch.jpg'}
                     },
-                   
-                       
-            {
-                "pitch": -8.13620081011064, 
-                "yaw": -169.5265184682008,
-                "type": "scene",
-                "text": "G. Between He Lineage Ancestral Hall and Xinwu Li",
-                "sceneId": "G",
-                "clickHandlerFunc" : toG,
-            },
-            {
-                "pitch": -21.18961775597519, 
-                "yaw": -16.67966916590732,
-                "type": "scene",
-                "text": "J. Temple of God of Literature, Wenchang Ge",
-                "sceneId": "J",
-                "clickHandlerFunc" : toJ,
-            }
+            
             ]
         },
-        "J":{
+        "J1":{
             "title":"J. Temple of God of Literature, Wenchang Ge",
             "type": "equirectangular",
-            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/I.jpg",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/J1.jpg",
             //angle range of horizontal view
             "haov": 360,
             //angle range of vertical view
@@ -972,56 +932,38 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
-               
                     {
-                    "pitch":  1.362592920052081, 
-                    "yaw": -140.32874629899163 , 
+                    "pitch": -24.017787690288003,  
+                    "yaw":  -2.64021378559264, 
                     "type": "info",
                     "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Closeup%20of%20the%20base%20of%20the%20arch.jpg'}
-                    },
-                    
-                    {
-                    "pitch": 26.03336914902445,   
-                    "yaw": -118.67324038144245, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Middle%20part%20of%20the%20arch%20with%20inscriptions%20on%20the%20frame.jpg'}
+                    "clickHandlerArgs" : {"text":'SANY0010.JPG'}
                     },
                     {
-                    "pitch": 11.85512515290337, 
-                    "yaw":  -119.19560127908154, 
+                    "pitch": -6.207660387925076, 
+                    "yaw": 37.18362749682103, 
                     "type": "info",
                     "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Overview%20of%20the%20arch.jpg'}
+                    "clickHandlerArgs" : {"text":'Statue%20of%20Earth%20God%20and%20his%20wife.jpg'}
                     },
                    
-                       
             {
-                "pitch": -8.13620081011064, 
-                "yaw": -169.5265184682008,
+                "pitch": -5.378471140677298, 
+                "yaw": -176.64950820791182,
                 "type": "scene",
-                "text": "G. Between He Lineage Ancestral Hall and Xinwu Li",
-                "sceneId": "G",
-                "clickHandlerFunc" : toG,
-            },
-            {
-                "pitch": -21.18961775597519, 
-                "yaw": -16.67966916590732,
-                "type": "scene",
-                "text": "J. Temple of God of Literature, Wenchang Ge",
-                "sceneId": "J",
-                "clickHandlerFunc" : toJ,
+                "text": "J2. Temple of the God of Literature, Second Floor",
+                "sceneId": "J2",
+                "clickHandlerFunc" : toJ2,
             }
             ]
         },
-        "I":{
-            "title":"I. Arch of Chastity and Filial Piety, Jie Xiao Fang",
+        "J2":{
+            "title":"J2. Temple of the God of Literature, Second Floor",
             "type": "equirectangular",
-            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/I.jpg",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/J2.jpg",
             //angle range of horizontal view
             "haov": 360,
             //angle range of vertical view
@@ -1032,56 +974,33 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                
+            
                     {
-                    "pitch":  1.362592920052081, 
-                    "yaw": -140.32874629899163 , 
+                    "pitch": 29.30195975613434,   
+                    "yaw": 48.11888499389317, 
                     "type": "info",
                     "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Closeup%20of%20the%20base%20of%20the%20arch.jpg'}
+                    "clickHandlerArgs" : {"text":'Statue%20of%20the%20God%20of%20Literature..jpg'}
                     },
-                    
-                    {
-                    "pitch": 26.03336914902445,   
-                    "yaw": -118.67324038144245, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Middle%20part%20of%20the%20arch%20with%20inscriptions%20on%20the%20frame.jpg'}
-                    },
-                    {
-                    "pitch": 11.85512515290337, 
-                    "yaw":  -119.19560127908154, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Overview%20of%20the%20arch.jpg'}
-                    },
-                   
-                       
+      
             {
-                "pitch": -8.13620081011064, 
-                "yaw": -169.5265184682008,
+                "pitch": -30.246188460065195, 
+                "yaw": 6.105111087093789,
                 "type": "scene",
-                "text": "G. Between He Lineage Ancestral Hall and Xinwu Li",
-                "sceneId": "G",
-                "clickHandlerFunc" : toG,
-            },
-            {
-                "pitch": -21.18961775597519, 
-                "yaw": -16.67966916590732,
-                "type": "scene",
-                "text": "J. Temple of God of Literature, Wenchang Ge",
-                "sceneId": "J",
-                "clickHandlerFunc" : toJ,
+                "text": "J1. Temple of God of Literature, Wenchang Ge",
+                "sceneId": "J1",
+                "clickHandlerFunc" : toJ1,
             }
             ]
         },
-        "I":{
-            "title":"I. Arch of Chastity and Filial Piety, Jie Xiao Fang",
+        "K1":{
+            "title":"K1. Precious Spring Inn, Exterior",
             "type": "equirectangular",
-            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/I.jpg",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/K1.jpg",
             //angle range of horizontal view
             "haov": 360,
             //angle range of vertical view
@@ -1092,55 +1011,233 @@ var v=pannellum.viewer('panorama', {
             "hfov": 90,
             "minPitch":-30,
             "maxPitch":30,
-            "hotSpotDebug":true,
+            //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
                
-                    {
-                    "pitch":  1.362592920052081, 
-                    "yaw": -140.32874629899163 , 
+                {
+                    "pitch": 3.7664898587742845,   
+                    "yaw": 44.24265900410747, 
                     "type": "info",
                     "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Closeup%20of%20the%20base%20of%20the%20arch.jpg'}
-                    },
-                    
-                    {
-                    "pitch": 26.03336914902445,   
-                    "yaw": -118.67324038144245, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Middle%20part%20of%20the%20arch%20with%20inscriptions%20on%20the%20frame.jpg'}
+                    "clickHandlerArgs" : {"text":'Exterior%20view%20of%20the%20inn.jpg'}
                     },
                     {
-                    "pitch": 11.85512515290337, 
-                    "yaw":  -119.19560127908154, 
+                    "pitch": 23.517727984559478,  
+                    "yaw":  153.47556701479485, 
                     "type": "info",
                     "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Overview%20of%20the%20arch.jpg'}
+                    "clickHandlerArgs" : {"text":'Residential%20houses%20besides%20the%20inn.jpg'}
+                    },
+            {
+                "pitch": -14.394500036412335,
+                "yaw": 75.28959077572777,
+                "type": "scene",
+                "text": "K2. Precious Spring Inn, Front Hall",
+                "sceneId": "K2",
+                "clickHandlerFunc" : toK2,
+            },
+            
+            ]
+        },
+        "K2":{
+            "title":"K2. Precious Spring Inn, Front Hall",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/K2.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [      
+                       
+            {
+                "pitch": -27.413222709885357, 
+                "yaw": -124.16196356548528,
+                "type": "scene",
+                "text": "K3. Precious Spring Inn, Main Hall Front",
+                "sceneId": "K3",
+                "clickHandlerFunc" : toK3,
+            },
+            {
+                "pitch": -23.90568946762527, 
+                "yaw": 51.8501436996812,
+                "type": "scene",
+                "text": "K1. Precious Spring Inn, Exterior",
+                "sceneId": "K1",
+                "clickHandlerFunc" : toK1,
+            }
+            ]
+        },
+        "K3":{
+            "title":"K3. Precious Spring Inn, Main Hall Front",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/K3.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+               
+                {
+                    "pitch": -20.449726414187253, 
+                    "yaw": 77.32025549370842, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Bridge%20in%20the%20courtyard.jpg'}
+                    },
+                    {
+                    "pitch": -30.07162052718097,   
+                    "yaw": 26.6552444706252, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Closeup%20of%20the%20pillar%20base.jpg'}
                     },
                    
                        
             {
-                "pitch": -8.13620081011064, 
-                "yaw": -169.5265184682008,
+                "pitch": -22.75397392078927, 
+                "yaw": -158.81987738224294,
                 "type": "scene",
-                "text": "G. Between He Lineage Ancestral Hall and Xinwu Li",
-                "sceneId": "G",
-                "clickHandlerFunc" : toG,
+                "text": "K2. Precious Spring Inn, Front Hall",
+                "sceneId": "K2",
+                "clickHandlerFunc" : toK2,
             },
             {
-                "pitch": -21.18961775597519, 
-                "yaw": -16.67966916590732,
+                "pitch":  -8.791590106978044,
+                "yaw": 74.71611188396186 ,
                 "type": "scene",
-                "text": "J. Temple of God of Literature, Wenchang Ge",
-                "sceneId": "J",
-                "clickHandlerFunc" : toJ,
+                "text": "K4. Precious Spring Inn, Main Hall Back",
+                "sceneId": "K4",
+                "clickHandlerFunc" : toK4,
             }
             ]
         },
-},
+        "K4":{
+            "title":"K4. Precious Spring Inn, Main Hall Back",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/K4.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [    
+                       
+            {
+                "pitch": -24.250926689550322,
+                "yaw": 117.76026909930968 ,
+                "type": "scene",
+                "text": "K3. Precious Spring Inn, Main Hall Front",
+                "sceneId": "K3",
+                "clickHandlerFunc" : toK3,
+            },
+            ]
+        },
 
-});
+        "L":{
+            "title":"L Upper Guodong, Community Hall Square",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/L.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+                {
+                    "pitch": 20.856734556711224, 
+                    "yaw": -105.69086666422496, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Overview%20of%20Community%20Hall.jpg'}
+                    },
+                    {
+                    "pitch": 13.820924311499848,   
+                    "yaw": 105.13170262853153, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Pond%20in%20front%20of%20Community%20Hall.jpg'}
+                    },
+                       
+            {
+                "pitch": -17.43907342980967, 
+                "yaw": 28.65387858948465 ,
+                "type": "scene",
+                "text": "M. Overview of Upper Guodong",
+                "sceneId": "M",
+                "clickHandlerFunc" : toM,
+            },
+            {
+                "pitch": -22.620970208124724, 
+                "yaw": -76.55513454725218,
+                "type": "scene",
+                "text": "K1. Precious Spring Inn, Exterior",
+                "sceneId": "K1",
+                "clickHandlerFunc" : toK1,
+            }
+            ]
+        },
+        "M":{
+            "title":"M. Overview of Upper Guodong",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/M.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+            {
+                "pitch": -10.84719569481934, 
+                "yaw": 119.89781737883638,
+                "type": "scene",
+                "text": "L. Upper Guodong, Community Hall Square",
+                "sceneId": "L",
+                "clickHandlerFunc" : toL,
+            }
+            ]
+        },
+       
+},
+}
+);
 
 //set the vertical bounds for the moving range of the view
 //var bounds = [-30,30];
@@ -1433,9 +1530,9 @@ function toI(){
     ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
 }
 
-function toJ(){
+function toJ1(){
     var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="J. Temple of God of Literature, Wenchang Ge";
+    currentSceneTxt.innerText="J1. Temple of God of Literature, First Floor";
     var myCircles = document.getElementsByClassName('cls-1');
     var i;
     for(i=0;i<myCircles.length;i++){
@@ -1443,16 +1540,33 @@ function toJ(){
     }
     var myCircle = document.getElementById('guodong-J');
     myCircle.style.fill = "#F26E22";
-    v.loadScene("J");
-    pageScene="J";
+    v.loadScene("J1");
+    pageScene="J1";
     console.log(pageScene);
     const dgallery = <ReactGallery/>;
     ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
 }
 
-function toK(){
+function toJ2(){
     var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="K. Precious Spring Inn, Baoquan Shanzhuang";
+    currentSceneTxt.innerText="J2. Temple of the God of Literature, Second Floor";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-J');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("J2");
+    pageScene="J2";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toK1(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="K1. Precious Spring Inn, Exterior";
     var myCircles = document.getElementsByClassName('cls-1');
     var i;
     for(i=0;i<myCircles.length;i++){
@@ -1460,8 +1574,59 @@ function toK(){
     }
     var myCircle = document.getElementById('guodong-K');
     myCircle.style.fill = "#F26E22";
-    v.loadScene("K");
-    pageScene="K";
+    v.loadScene("K1");
+    pageScene="K1";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toK2(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="K2. Precious Spring Inn, Front Hall";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-K');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("K2");
+    pageScene="K2";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toK3(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="K3. Precious Spring Inn, Main Hall Front";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-K');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("K3");
+    pageScene="K3";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toK4(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="K4. Precious Spring Inn, Main Hall Back";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-K');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("K4");
+    pageScene="K4";
     console.log(pageScene);
     const dgallery = <ReactGallery/>;
     ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
@@ -1496,40 +1661,6 @@ function toM(){
     myCircle.style.fill = "#F26E22";
     v.loadScene("M");
     pageScene="M";
-    console.log(pageScene);
-    const dgallery = <ReactGallery/>;
-    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
-}
-
-function toN(){
-    var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="N. Precious Spring Peak Area, Baoquan Yan";
-    var myCircles = document.getElementsByClassName('cls-1');
-    var i;
-    for(i=0;i<myCircles.length;i++){
-        myCircles[i].style.fill="#023859";
-    }
-    var myCircle = document.getElementById('guodong-N');
-    myCircle.style.fill = "#F26E22";
-    v.loadScene("N");
-    pageScene="N";
-    console.log(pageScene);
-    const dgallery = <ReactGallery/>;
-    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
-}
-
-function toO(){
-    var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="O. Lake Dawan, Dawan Hu";
-    var myCircles = document.getElementsByClassName('cls-1');
-    var i;
-    for(i=0;i<myCircles.length;i++){
-        myCircles[i].style.fill="#023859";
-    }
-    var myCircle = document.getElementById('guodong-O');
-    myCircle.style.fill = "#F26E22";
-    v.loadScene("O");
-    pageScene="O";
     console.log(pageScene);
     const dgallery = <ReactGallery/>;
     ReactDOM.render(dgallery, document.getElementById('react-gallery'));  

@@ -438,148 +438,111 @@ if(pageScene=="I"){
    </div>);
 }
 
-if(pageScene=="F2"){
+if(pageScene=="J1"){
   return(
-  <div className="gallery-row">
+    <div className="gallery-row">
 
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife1.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife1.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife1.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife2.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife2.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife2.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife3.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife3.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife3.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Eternal%20beneficence%20left%20on%20the%20people.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Eternal%20beneficence%20left%20on%20the%20people.jpg" alt='Eternal%20beneficence%20left%20on%20the%20people.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade1.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade1.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade1.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade2.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade2.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade2.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade3.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade3.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade3.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade4.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade4.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade4.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Placard%20for%20parade-Heaven%20knows,%20earth%20knows,%20say%20not%20that%20no%20one%20knows.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Placard%20for%20parade-Heaven%20knows,%20earth%20knows,%20say%20not%20that%20no%20one%20knows.jpg" alt='Placard%20for%20parade-Heaven%20knows,%20earth%20knows,%20say%20not%20that%20no%20one%20knows.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg" alt='Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg'onClick={this.on.bind(this)}></img></div>
- 
- 
-  <div className="back-button">
-    <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>
-    </div>
- </div>);
+    <div className="gallery-column">
+    <img id='Front%20view%20of%20the%20temple.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/J%20Temple%20of%20God%20of%20Literature%2C%20Wenchang%20Ge/J.1.%20Temple%20of%20God%20of%20Literature%2C%20First%20Floor/Front%20view%20of%20the%20temple.jpg" alt='Front%20view%20of%20the%20temple.jpg'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='Overview%20of%20the%20temple.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/J%20Temple%20of%20God%20of%20Literature%2C%20Wenchang%20Ge/J.1.%20Temple%20of%20God%20of%20Literature%2C%20First%20Floor/Overview%20of%20the%20temple.jpg" alt='Overview%20of%20the%20temple.jpg'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='Record%20of%20the%20renovation%20of%20the%20temple%20in%201988,%20.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/J%20Temple%20of%20God%20of%20Literature%2C%20Wenchang%20Ge/J.1.%20Temple%20of%20God%20of%20Literature%2C%20First%20Floor/Record%20of%20the%20renovation%20of%20the%20temple%20in%201988,%20.jpg" alt='Record%20of%20the%20renovation%20of%20the%20temple%20in%201988,%20.jpg'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='SANY0010.JPG' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/J%20Temple%20of%20God%20of%20Literature%2C%20Wenchang%20Ge/J.1.%20Temple%20of%20God%20of%20Literature%2C%20First%20Floor/SANY0010.JPG" alt='SANY0010.JPG'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='Side%20view%20of%20the%20temple.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/J%20Temple%20of%20God%20of%20Literature%2C%20Wenchang%20Ge/J.1.%20Temple%20of%20God%20of%20Literature%2C%20First%20Floor/Side%20view%20of%20the%20temple.jpg" alt='Side%20view%20of%20the%20temple.jpg'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='Statue%20of%20Earth%20God%20and%20his%20wife.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/J%20Temple%20of%20God%20of%20Literature%2C%20Wenchang%20Ge/J.1.%20Temple%20of%20God%20of%20Literature%2C%20First%20Floor/Statue%20of%20Earth%20God%20and%20his%20wife.jpg" alt='Statue%20of%20Earth%20God%20and%20his%20wife.jpg'onClick={this.on.bind(this)}></img></div>
+   
+   
+   <div className="back-button">
+   <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p></div>
+   </div>);
 }
 
-if(pageScene=="F2"){
+if(pageScene=="J2"){
   return(
-  <div className="gallery-row">
+    <div className="gallery-row">
 
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife1.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife1.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife1.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife2.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife2.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife2.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife3.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife3.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife3.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Eternal%20beneficence%20left%20on%20the%20people.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Eternal%20beneficence%20left%20on%20the%20people.jpg" alt='Eternal%20beneficence%20left%20on%20the%20people.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade1.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade1.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade1.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade2.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade2.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade2.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade3.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade3.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade3.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade4.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade4.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade4.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Placard%20for%20parade-Heaven%20knows,%20earth%20knows,%20say%20not%20that%20no%20one%20knows.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Placard%20for%20parade-Heaven%20knows,%20earth%20knows,%20say%20not%20that%20no%20one%20knows.jpg" alt='Placard%20for%20parade-Heaven%20knows,%20earth%20knows,%20say%20not%20that%20no%20one%20knows.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg" alt='Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg'onClick={this.on.bind(this)}></img></div>
- 
- 
-  <div className="back-button">
-    <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>
-    </div>
- </div>);
+    <div className="gallery-column">
+    <img id='001533.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/J%20Temple%20of%20God%20of%20Literature%2C%20Wenchang%20Ge/J.2.%20Temple%20of%20the%20God%20of%20Literature%2C%20Second%20Floor/001533.jpg" alt='001533.jpg'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='DSCN1576.JPG' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/J%20Temple%20of%20God%20of%20Literature%2C%20Wenchang%20Ge/J.2.%20Temple%20of%20the%20God%20of%20Literature%2C%20Second%20Floor/DSCN1576.JPG" alt='DSCN1576.JPG'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='Statue%20of%20the%20God%20of%20Literature..jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/J%20Temple%20of%20God%20of%20Literature%2C%20Wenchang%20Ge/J.2.%20Temple%20of%20the%20God%20of%20Literature%2C%20Second%20Floor/Statue%20of%20the%20God%20of%20Literature..jpg" alt='Statue%20of%20the%20God%20of%20Literature..jpg'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='002033.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/J%20Temple%20of%20God%20of%20Literature%2C%20Wenchang%20Ge/J.2.%20Temple%20of%20the%20God%20of%20Literature%2C%20Second%20Floor/002033.jpg" alt='002033.jpg'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='SANY0013.JPG' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/J%20Temple%20of%20God%20of%20Literature%2C%20Wenchang%20Ge/J.2.%20Temple%20of%20the%20God%20of%20Literature%2C%20Second%20Floor/SANY0013.JPG" alt='SANY0013.JPG'onClick={this.on.bind(this)}></img></div>
+   
+   
+   <div className="back-button">
+   <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p></div>
+   </div>);
 }
 
-if(pageScene=="F2"){
+if(pageScene=="K1"||pageScene=="K2"){
   return(
-  <div className="gallery-row">
+    <div className="gallery-row">
 
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife1.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife1.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife1.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife2.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife2.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife2.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife3.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife3.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife3.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Eternal%20beneficence%20left%20on%20the%20people.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Eternal%20beneficence%20left%20on%20the%20people.jpg" alt='Eternal%20beneficence%20left%20on%20the%20people.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade1.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade1.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade1.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade2.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade2.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade2.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade3.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade3.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade3.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade4.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade4.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade4.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Placard%20for%20parade-Heaven%20knows,%20earth%20knows,%20say%20not%20that%20no%20one%20knows.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Placard%20for%20parade-Heaven%20knows,%20earth%20knows,%20say%20not%20that%20no%20one%20knows.jpg" alt='Placard%20for%20parade-Heaven%20knows,%20earth%20knows,%20say%20not%20that%20no%20one%20knows.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg" alt='Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg'onClick={this.on.bind(this)}></img></div>
- 
- 
-  <div className="back-button">
-    <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>
-    </div>
- </div>);
+    <div className="gallery-column">
+    <img id='Exterior%20view%20of%20the%20inn.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/K%20Precious%20Spring%20Inn%2C%20Baoquan%20Shanzhuang/K.1.%20Precious%20Spring%20Inn%2C%20Exterior/Exterior%20view%20of%20the%20inn.jpg" alt='Exterior%20view%20of%20the%20inn.jpg'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='Residential%20houses%20besides%20the%20inn.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/K%20Precious%20Spring%20Inn%2C%20Baoquan%20Shanzhuang/K.1.%20Precious%20Spring%20Inn%2C%20Exterior/Residential%20houses%20besides%20the%20inn.jpg" alt='Residential%20houses%20besides%20the%20inn.jpg'onClick={this.on.bind(this)}></img></div>
+   
+   
+   <div className="back-button">
+   <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p></div>
+   </div>);
 }
 
-if(pageScene=="F2"){
-  return(
-  <div className="gallery-row">
 
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife1.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife1.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife1.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife2.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife2.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife2.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife3.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife3.jpg" alt='City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife3.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Eternal%20beneficence%20left%20on%20the%20people.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Eternal%20beneficence%20left%20on%20the%20people.jpg" alt='Eternal%20beneficence%20left%20on%20the%20people.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade1.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade1.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade1.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade2.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade2.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade2.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade3.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade3.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade3.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Model%20of%20the%20city%20god%20temple%20for%20parade4.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Model%20of%20the%20city%20god%20temple%20for%20parade4.jpg" alt='Model%20of%20the%20city%20god%20temple%20for%20parade4.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Placard%20for%20parade-Heaven%20knows,%20earth%20knows,%20say%20not%20that%20no%20one%20knows.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Placard%20for%20parade-Heaven%20knows,%20earth%20knows,%20say%20not%20that%20no%20one%20knows.jpg" alt='Placard%20for%20parade-Heaven%20knows,%20earth%20knows,%20say%20not%20that%20no%20one%20knows.jpg'onClick={this.on.bind(this)}></img></div>
-  <div className="gallery-column">
-  <img id='Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/img/rear-hall/Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg" alt='Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg'onClick={this.on.bind(this)}></img></div>
- 
- 
-  <div className="back-button">
-    <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p>
-    </div>
- </div>);
+if(pageScene=="K3"||pageScene=="K4"){
+  return(
+    <div className="gallery-row">
+
+    <div className="gallery-column">
+    <img id='Bridge%20in%20the%20courtyard.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/K%20Precious%20Spring%20Inn%2C%20Baoquan%20Shanzhuang/K.3.%20Precious%20Spring%20Inn%2C%20Main%20Hall%20Front/Bridge%20in%20the%20courtyard.jpg" alt='Bridge%20in%20the%20courtyard.jpg'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='Closeup%20of%20the%20pillar%20base.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/K%20Precious%20Spring%20Inn%2C%20Baoquan%20Shanzhuang/K.3.%20Precious%20Spring%20Inn%2C%20Main%20Hall%20Front/Closeup%20of%20the%20pillar%20base.jpg" alt='Closeup%20of%20the%20pillar%20base.jpg'onClick={this.on.bind(this)}></img></div>
+   
+   
+   <div className="back-button">
+   <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p></div>
+   </div>);
+}
+if(pageScene=="L"){
+  return(
+    <div className="gallery-row">
+
+    <div className="gallery-column">
+    <img id='Overview%20of%20Community%20Hall.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/L%20Upper%20Guodong%2C%20Community%20Hall%20Square/Overview%20of%20Community%20Hall.jpg" alt='Overview%20of%20Community%20Hall.jpg'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='Sideway%20besides%20Community%20Hall.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/L%20Upper%20Guodong%2C%20Community%20Hall%20Square/Sideway%20besides%20Community%20Hall.jpg" alt='Sideway%20besides%20Community%20Hall.jpg'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='Pond%20in%20front%20of%20Community%20Hall.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/L%20Upper%20Guodong%2C%20Community%20Hall%20Square/Pond%20in%20front%20of%20Community%20Hall.jpg" alt='Pond%20in%20front%20of%20Community%20Hall.jpg'onClick={this.on.bind(this)}></img></div>
+   
+   
+   <div className="back-button">
+   <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p></div>
+   </div>);
+}
+if(pageScene=="M"){
+  return(
+    <div className="gallery-row">
+
+    <div className="gallery-column">
+    <img id='A%20view%20of%20the%20Upper%20Guo%20from%20a%20building%20nearby%20Community%20Hall.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/M%20Overview%20of%20Upper%20Guodong/A%20view%20of%20the%20Upper%20Guo%20from%20a%20building%20nearby%20Community%20Hall.jpg" alt='A%20view%20of%20the%20Upper%20Guo%20from%20a%20building%20nearby%20Community%20Hall.jpg'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='Another%20angle%20of%20the%20village.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/M%20Overview%20of%20Upper%20Guodong/Another%20angle%20of%20the%20village.jpg" alt='Another%20angle%20of%20the%20village.jpg'onClick={this.on.bind(this)}></img></div>
+    <div className="gallery-column">
+    <img id='View%20of%20the%20valley,%20facing%20southwest.jpg' src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/M%20Overview%20of%20Upper%20Guodong/View%20of%20the%20valley,%20facing%20southwest.jpg" alt='View%20of%20the%20valley,%20facing%20southwest.jpg'onClick={this.on.bind(this)}></img></div>
+   
+   
+   <div className="back-button">
+   <p><b><a href = "https://jw4590.github.io/TangxiCityGodTemple/menu/index.html">&rarr;</a></b></p></div>
+   </div>);
 }
 }
      on(image) {

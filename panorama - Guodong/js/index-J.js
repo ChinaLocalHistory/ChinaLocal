@@ -1,4 +1,4 @@
-var pageScene="D1"; 
+var pageScene="J1"; 
 const gallery = <ReactGallery/>;
 //const domContainer = document.querySelector('#react-gallery');
 ReactDOM.render(gallery, document.getElementById('react-gallery'));
@@ -9,7 +9,7 @@ ReactDOM.render(gallery, document.getElementById('react-gallery'));
 //generating the panorama
 var v=pannellum.viewer('panorama', {
     "default":{
-        "firstScene":"D1",
+        "firstScene":"J1",
         "sceneFadeDuration": 1000
     },
 

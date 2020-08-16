@@ -1,4 +1,4 @@
-var pageScene="rearHall"; 
+var pageScene="I"; 
 const gallery = <ReactGallery/>;
 //const domContainer = document.querySelector('#react-gallery');
 ReactDOM.render(gallery, document.getElementById('react-gallery'));
@@ -9,16 +9,15 @@ ReactDOM.render(gallery, document.getElementById('react-gallery'));
 //generating the panorama
 var v=pannellum.viewer('panorama', {
     "default":{
-        "firstScene":"rear-hall",
-        "author": "JENNY CHANGE THIS",
+        "firstScene":"I",
         "sceneFadeDuration": 1000
     },
 
     "scenes":{
-        "front-gate":{
-            "title":"Front Gate",
+        "A":{
+            "title":"A. West Gate, Ximen",
             "type": "equirectangular",
-            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/FrontGate.jpg",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/A.jpg",
             //angle range of horizontal view
             "haov": 360,
             //angle range of vertical view
@@ -33,64 +32,27 @@ var v=pannellum.viewer('panorama', {
             "maxPitch":30,
             "hotSpots": [
                 {
-                    "pitch":22.494174945326723,
-                    "yaw":-4.361632086533733,
-                    "type": "info",
-                    "text": "City God Temple<br>城隍廟",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":"City God Temple<br>城隍廟"},
-                    //"cssClass": "custom-hotspot",
-                },
-                {
-                    "pitch": 19.494174945326723,
-                    "yaw": 26.90945113444174,
-                    "type": "info",
-                    "text": "Defender of Our Precious Wu<br>寳婺屏藩",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":"Defender of Our Precious Wu<br>寳婺屏藩"},
-                    //"cssClass": "custom-hotspot",
-                },
-                {
-                    "pitch": 19.494174945326723,
-                    "yaw": -34.442750848944804,
-                    "type": "info",
-                    "text": "Protector of Tangxi<br>仙舟保障",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":"Protector of Tangxi<br>仙舟保障"},
-                    //"cssClass": "custom-hotspot",
-                },
-                {
-                    "pitch": 5.7657145086227395,
-                    "yaw": -11.22551496208543,
+                    "pitch": 0.7695716407371126, 
+                    "yaw": -95.54280748056317, 
                     "type": "info",
                     "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":"Gate guardian god2"},
-                    //"cssClass": "custom-hotspot",
+                    "clickHandlerArgs" : {"text":'Overview%20of%20the%20West%20Gate.JPG'}
                 },
                 {
-                    "pitch": 5.7657145086227395,
-                    "yaw": 2.389447852098916,
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":"Gate guardian god1"},
-                    //"cssClass": "custom-hotspot",
-                },
-                {
-                    "pitch": -18.285253674622176,
-                    "yaw": 177.2863097277794,
+                    "pitch": -6.224028266500834,
+                    "yaw": 85.91131837122502,
                     "type": "scene",
-                    "text": "B. Opera Stage",
-                    "sceneId": "opera-stage",
-                    "clickHandlerFunc" : toOperaStage,
+                    "text": "B. Water Mouth (reservoir), Shuikou",
+                    "sceneId": "B",
+                    "clickHandlerFunc" : toB,
                 }
             ]
         },
 
-        "opera-stage":{
-            "title":"Opera Stage",
-            "author": "JENNY CHANGE THIS",
+        "B":{
+            "title":"B. Water Mouth (reservoir), Shuikou",
             "type": "equirectangular",
-            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/OperaStage.jpg",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/B.jpg",
             //angle range of horizontal view
             "haov": 360,
             //angle range of vertical view
@@ -104,127 +66,36 @@ var v=pannellum.viewer('panorama', {
             //"hotSpotDebug":true,
             "autoLoad":true,
             "hotSpots": [
-                {
-                "pitch": 8.249622428606415,
-                "yaw":  36.55636945188646,
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":"Balcony.jpg"}
-                },
-                {
-                "pitch": 19.674653911671037, 
-                "yaw": 41.653090105395634, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Carved%20bracket%20and%20painted%20column.jpg'}
-                },
-                {
-                "pitch": 15.680262694075871, 
-                "yaw": 35.075639568415845, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Carved%20bracket%20and%20painted%20column1.jpg'}
-                },
-                {
-                "pitch": 27.77400627497553, 
-                "yaw": -47.000391805545576, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Carved,%20painted%20beams%20and%20balcony%20around%20the%20stage.jpg'}
-                },
-                {
-                "pitch": 35.58785801838995, 
-                "yaw": 31.503575979756686, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Ceiling%20and%20carved%20beams1.jpg'}
-                },
-                {
-                "pitch": -4.7338007227490767, 
-                "yaw": -130.79219153044818, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Day%20Patrol.jpg'}
-                },
-                {
-                "pitch": -4.323439134449426, 
-                "yaw": -117.64825797693533, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Details%20of%20Day%20Patrol.jpg'}
-                },
-                {
-                "pitch": 33.80892369570187, 
-                "yaw": -13.439506576574727, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Decorated%20ceiling.jpg'}
-                },
-                {
-                "pitch": 5.917672508033212, 
-                "yaw": -56.55578204105773, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Entrance%20to%20the%20stage%20with%20curtain.jpg'}
-                },
-                {
-                "pitch": 5.917672508033212, 
-                "yaw": -92.80806459633261, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Entrance_exit%20to%20the%20stage%20with%20curtain.jpg'}
-                },
-                {
-                "pitch": -3.125153680300521, 
-                "yaw": -20.294519499776477, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Night%20Patrol.jpg'}
-                },
-                {
-                "pitch": -2.82274273368337, 
-                "yaw": -32.112330571243625, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Night%20Patrol1.jpg'}
-                },
-                {
-                "pitch": -11.0907082413663, 
-                "yaw": -24.95899178914949, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Night%20Patrol2.jpg'}
-                },
-                {
-                "pitch": 21.22700240825661, 
-                "yaw": -76.27342382517517, 
-                "type": "info",
-                "text": "The temple shines again<br>廟貌重光",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20temple%20shines%20again.jpg'}
-                },
+               
             {
-                "pitch": -22.056335177232825,
-                "yaw": 106.1616076075473,
-                "type": "scene",
-                "text": "A. Front Gate",
-                "sceneId": "front-gate",
-                "clickHandlerFunc" : toFrontGate,
+            "pitch":  7.171152625819008, 
+            "yaw": -4.245616451134026, 
+            "type": "info",
+            "clickHandlerFunc" : expandImg,
+            "clickHandlerArgs" : {"text":'Overview%20of%20the%20Watermouth.JPG'}
             },
             {
-                "pitch": -12.733579062821594,
-                "yaw": 106.09878828500743,
+                "pitch": -4.845269962047471, 
+                "yaw": -52.80660848248078,
                 "type": "scene",
-                "text": "C. Courtyard Near Stage",
-                "sceneId": "courtyard-near-stage",
-                "clickHandlerFunc" : toCourtyardNearStage,
+                "text":"C. Returning Dragon Bridge, Huilong Qiao",
+                "sceneId": "C",
+                "clickHandlerFunc" : toC,
+            },
+            {
+                "pitch": -14.233784317065176, 
+                "yaw":  126.65324634098477,
+                "type": "scene",
+                "text": "A. West Gate, Ximen",
+                "sceneId": "A",
+                "clickHandlerFunc" : toA,
             }
             ]
         },
-        "courtyard-near-stage":{
-            "title":"Courtyard Near Stage",
+        "C":{
+            "title":"C. Returning Dragon Bridge, Huilong Qiao",
             "type": "equirectangular",
-            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/CourtyardNearStage.jpg",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/C.jpg",
             //angle range of horizontal view
             "haov": 360,
             //angle range of vertical view
@@ -233,77 +104,34 @@ var v=pannellum.viewer('panorama', {
             "vOffset": 0,
             //default zoom-in control
             "hfov": 90,
-            //"hotSpotDebug":true,
-            "autoLoad":true,
             "minPitch":-30,
             "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
             "hotSpots": [
-                {
-                    "pitch": 16.678639792930042, 
-                    "yaw": 179.63427516163063, 
-                    "type": "info",
-                    "text": "Bridge of Necessity<br>",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Bridge%20of%20Necessity.jpg'}
-                    },
-                    {
-                    "pitch": 32.76363490515169, 
-                    "yaw": 0.12299178670645272, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Bridge%20of%20Necessity1.jpg'}
-                    },
-                    {
-                    "pitch": 1.898677912753009, 
-                    "yaw": -3.9700842297310146, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20left%20part.jpg'}
-                    },
-                    {
-                    "pitch": 1.8866181478692823, 
-                    "yaw": 0.1179852912494539, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20middle%20part.jpg'}
-                    },
-                    {
-                    "pitch": 1.846492396525223, 
-                    "yaw": 4.220761544688607, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Carved%20decorations%20on%20the%20front%20side%20of%20the%20stage,%20the%20right%20part.jpg'}
-                    },
-                    {
-                    "pitch": 6.587449862765451, 
-                    "yaw": 117.93617578677919, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'The%20remainder%20of%20an%20old%20tree,%20displayed%20in%20the%20courtyard..jpg'}
-                    },
-                    {
-                        "pitch": -11.975436433248024,
-                        "yaw": -21.95271389657835,
-                        "type": "scene",
-                        "text": "B. Opera Stage",
-                        "sceneId": "opera-stage",
-                        "clickHandlerFunc" : toOperaStage,
-                    },
-                    {
-                        "pitch": -11.597696782329445,
-                        "yaw": 0.4913498891597825,
-                        "type": "scene",
-                        "text": "D. Courtyard Near Main Hall",
-                        "sceneId": "courtyard-near-main-hall",
-                        "clickHandlerFunc" : toCourtyardNearMainHall,
-                    }
+               
+            {
+                "pitch":  -24.90504120976177, 
+                "yaw": 140.9004422127586,
+                "type": "scene",
+                "text": "D1 Hailin Court--exterior",
+                "sceneId": "D1",
+                "clickHandlerFunc" : toD1,
+            },
+            {
+                "pitch":-22.29490993983829, 
+                "yaw": -45.40962870380243,
+                "type": "scene",
+                "text": "B. Water Mouth (reservoir), Shuikou",
+                "sceneId": "B",
+                "clickHandlerFunc" : toB,
+            }
             ]
         },
-
-        "courtyard-near-main-hall":{
-            "title":"Courtyard Near Main Hall",
+        "D1":{
+            "title":"D. Hailin Court, Hailin Ge",
             "type": "equirectangular",
-            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/CourtyardNearMainHall.jpg",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/D1.jpg",
             //angle range of horizontal view
             "haov": 360,
             //angle range of vertical view
@@ -312,789 +140,1104 @@ var v=pannellum.viewer('panorama', {
             "vOffset": 0,
             //default zoom-in control
             "hfov": 90,
-            //"hotSpotDebug":true,
-            "autoLoad":true,
             "minPitch":-30,
             "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
             "hotSpots": [
-                    {
-                    "pitch": 5.2696320457256, 
-                    "yaw": 119.60801686270025, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'000106.jpg'}
-                    },
-                    {
-                    "pitch": 4.126803625963604, 
-                    "yaw": 112.45508965387569, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'000107.jpg'}
-                    },
-                    {
-                    "pitch": 14.73751499421178, 
-                    "yaw": 154.20263965278593, 
-                    "type": "info",
-                    "text":"Gate of the Main Hall<br>冥冥有主",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'000154.jpg'}
-                    },
-                    {
-                    "pitch": -3.150231036631464, 
-                    "yaw": 122.82474607256833, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'000318.jpg'}
-                    },
-                    {
-                    "pitch": 2.1760373374049338, 
-                    "yaw": -157.88269376219904, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'An%20old%20stele%20of%20donation,%20displayed.%20%202.jpg'}
-                    },
-                    {
-                    "pitch": -1.3262906923064817, 
-                    "yaw": -165.1575256283831, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'An%20old%20stele%20of%20donors,%20displayed..jpg'}
-                    },
-                    {
-                    "pitch": 18.052243619692685, 
-                    "yaw": 175.76697291976876, 
-                    "type": "info",
-                    "text":"Furnace for burning paper",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Furnace%20for%20burning%20paper.jpg'}
-                    },
-                    {
-                    "pitch": 18.622199473350996, 
-                    "yaw": 132.3992121182789, 
-                    "type": "info",
-                    "text":"Furnace for burning sutra",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Furnace%20for%20burning%20sutra.jpg'}
-                    },
-                    {
-                    "pitch": 7.92156769347885, 
-                    "yaw": 154.19746734041252, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Gate%20of%20the%20main%20hall.jpg'}
-                    },
-                    {
-                    "pitch": 18.222292432103924, 
-                    "yaw":-135.1296085807799, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Modern%20stele%20with%20the%20names%20of%20donors%20for%20the%20renovation%20of%20the%20City%20God%20Temple..jpg'}
-                    },
-                  
-                    {
-                    "pitch": 13.832390909813512, 
-                    "yaw": 124.60630434688397, 
-                    "type": "info",
-                    "text":"Overview of Dragon King Temple<br>龍王廟",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Overview%20of%20Dragon%20King%20Temple.jpg'}
-                    },
-                    {
-                    "pitch": 13.532390909813512, 
-                    "yaw": -177.19212538636646, 
-                    "type": "info",
-                    "text":"Overview of Having Children Sanctuary<br>達生菴",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Overview%20of%20Having%20Children%20Sanctuary.jpg'}
-                    },
-                    {
-                    "pitch": 6.421861087048415, 
-                    "yaw": 146.37781411009325, 
-                    "type": "info",
-                    "text":"Overview of Having Children Sanctuary<br>達生菴",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'The%20city%20is%20secured.jpg'}
-                    },
-                    {
-                    "pitch": 6.421861087048415, 
-                    "yaw": 161.56764611245043, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'The%20customs%20are%20honest.jpg'}
-                    },
-                    {
-                    "pitch": -22.842125247240606,
-                    "yaw": -25.59529817925453,
-                    "type": "scene",
-                    "text": "C. Courtyard Near Stage",
-                    "sceneId": "courtyard-near-stage",
-                    "clickHandlerFunc" : toCourtyardNearStage,
-                    },
-                    {
-                    "pitch": -14.711915990738916,
-                    "yaw": 153.85953917878498,
-                    "type": "scene",
-                    "text": "E. Dragon King Temple",
-                    "sceneId": "dragon-king-temple",
-                    "clickHandlerFunc" : toDragonKingTemple,
-                    },
-                ]
-        },
-    
-    "dragon-king-temple":{
-        "title":"Dragon King Temple",
-        "type": "equirectangular",
-        "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/DragonKingTemple.jpg",
-        //angle range of horizontal view
-        "haov": 360,
-        //angle range of vertical view
-        "vaov": 75.9,
-        //vertical angle of the whole panorama
-        "vOffset": 0,
-        //default zoom-in control
-        "hfov": 90,
-        //"hotSpotDebug":true,
-        "autoLoad":true,
-        "minPitch":-30,
-        "maxPitch":30,
-        "hotSpots": [
+               
             {
-                "pitch": -32.99678086875983, 
-                "yaw": -125.35347127879098, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Four%20dragon%20kings%20and%20the%20incense%20burner.jpg'}
-                },
-                {
-                "pitch": -17.62964366410583, 
-                "yaw": 151.65632014908059, 
-                "type": "info",
-                "text":"'It has command over water,how great the spirit power'<br>'其功在水神之格私養洋乎'",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'It%20has%20command%20over%20water,%20how%20great%20the%20spirit%20power.jpg'}
-                },
-                {
-                "pitch": -18.04732244657767, 
-                "yaw": -37.86358948651765, 
-                "type": "info",
-                "text":"'Only virtue moves Heaven,how clear the dragons influence'<br>'惟德动天龙之为民昭昭也'",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Only%20virtue%20moves%20Heaven,%20how%20clear%20the%20dragons%20influence.jpg'}
-                },
-                {
-                "pitch": 42.64204268219442, 
-                "yaw": -50.715165666558704, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20the%20paintings%20on%20the%20eastern%20wall.jpg'}
-                },
-                {
-                "pitch": 22.32233017462678, 
-                "yaw": -58.0372920064603, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20the%20paintings%20on%20the%20eastern%20wall1.jpg'}
-                },
-                {
-                "pitch": 22.32233017462678, 
-                "yaw": -48.74478904494577, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20the%20paintings%20on%20the%20eastern%20wall2.jpg'}
-                },
-                {
-                "pitch": 38.02470052534364, 
-                "yaw": 166.46635060592024, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20the%20paintings%20on%20the%20western%20wall.jpg'}
-                },
-                {
-                "pitch": 20.81789891067519, 
-                "yaw": 172.05605764207147, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20the%20paintings%20on%20the%20western%20wall1.jpg'}
-                },
-                {
-                "pitch": 20.81789891067519, 
-                "yaw": 163.04851211080717, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20the%20paintings%20on%20the%20western%20wall2.jpg'}
-                },
-                {
-                "pitch": 38.359735412983056, 
-                "yaw": -127.64584743627428, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Painting%20depicting.eight%20Immortals%20crossing%20the%20sea.jpg'}
-                },
-                {
-                "pitch": -6.715767582209447, 
-                "yaw": -118.83363844731387, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20Dragon%20King%20of%20the%20Eastern%20Seas.jpg'}
-                },
-                {
-                "pitch":-6.715767582209447, 
-                "yaw": -141.1962298500529, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20Dragon%20King%20of%20the%20Northern%20Seas.jpg'}
-                },
-                {
-                "pitch": -6.715767582209447, 
-                "yaw": -103.4416678572223, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20Dragon%20King%20of%20the%20Southern%20Seas.jpg'}
-                },
-                {
-                "pitch": -6.715767582209447, 
-                "yaw":-131.39677637386515, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20Dragon%20King%20of%20the%20Western%20Seas.jpg'}
-                },
-                {
-                "pitch":-9.058805986160728, 
-                "yaw": -157.6947647971333, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20God%20of%20Earth.jpg'}
-                },
-                {
-                "pitch": -9.058805986160728, 
-                "yaw": -81.58098805433777, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20God%20of%20Five%20Grains.jpg'}
-                },
-                {
-                "pitch": 12.946734956330546, 
-                "yaw": -44.20161487068782, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20God%20of%20Rain.jpg'}
-                },
-                {
-                "pitch": 0.4244958961732275, 
-                "yaw": 141.43887771588007, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20God%20of%20Thunder.jpg'}
-                },
-                {
-                "pitch": -9.058805986160728, 
-                "yaw": -92.13023203481549, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20God%20of%20Wealth.jpg'}
-                },
-                {
-                "pitch": 2.74867682959895, 
-                "yaw": -61.822330670954926, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20God%20of%20Wind.jpg'}
-                },
-                {
-                "pitch": -9.058805986160728, 
-                "yaw": -163.82285750673026, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20Goddess%20of%20Earth,%20the%20God%20of%20Longevity.jpg'}
-                },
-                {
-                "pitch":5.166320931128381, 
-                "yaw": 176.69266183384238, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20Goddess%20of%20Lightning.jpg'}
-                },
-                {
-                "pitch": 24.084128772159435, 
-                "yaw": -152.27256165370113, 
-                "type": "info",
-                "text":"'The oceans have calmed, the rivers have cleared; the world is at peace'<br>'海宴河清世太平'",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20oceans%20have%20calmed,%20the%20rivers%20have%20cleared;%20the%20world%20is%20at%20peace.jpg'}
-                },
-                {
-                "pitch": 24.084128772159435, 
-                "yaw": -97.48367025626507, 
-                "type": "info",
-                "text":"'The wind has softened, the rain is gentle, the people are happy'<br>'風調雨順民安樂'",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'The%20wind%20has%20softened,%20the%20rain%20is%20gentle,%20the%20people%20are%20happy.jpg'}
-                },
-                {
-                "pitch": -18.327043630549703,
-                "yaw":38.515174016337824,
+                "pitch": -17.865535605353674, 
+                "yaw": -143.25477114574946,
                 "type": "scene",
-                "text": "D. Courtyard Near Main Hall",
-                "sceneId": "courtyard-near-main-hall",
-                "clickHandlerFunc" : toCourtyardNearMainHall,
-                },
-                {
-                "pitch": -18.327043630549703,
-                "yaw": 86.5420114546564,
-                "type": "scene",
-                "text": "F. Bearing Children Cloister",
-                "sceneId": "bearing-children-cloister",
-                "clickHandlerFunc" : toBearingChildrenCloister,
-                },
-            ]
-    },
-    "bearing-children-cloister":{
-        "title":"Bearing Children Cloister",
-        "type": "equirectangular",
-        "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/BearingChildrenCloister.jpg",
-        //angle range of horizontal view
-        "haov": 360,
-        //angle range of vertical view
-        "vaov": 75.9,
-        //vertical angle of the whole panorama
-        "vOffset": 0,
-        //default zoom-in control
-        "hfov": 90,
-       // "hotSpotDebug":true,
-        "autoLoad":true,
-        "minPitch":-30,
-        "maxPitch":30,
-        "hotSpots": [
-            {
-                "pitch": -21.957396496759443, 
-                "yaw": 129.35245930315295, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'000132.jpg'}
-                },
-                {
-                "pitch": 36.11624385161904, 
-                "yaw": 123.608075514809, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Ceiling%20painting%20above%20Guanyin.jpg'}
-                },
-                {
-                "pitch": 13.023408705617465, 
-                "yaw": 105.72034037545157,
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Guanyi%20female%20acolyte,%20the%20Naga%20daughter.jpg'}
-                },
-                {
-                "pitch":13.023408705617465,  
-                "yaw": 140.30132469951832, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Guanyi%20male%20acolyte,%20Shancai.jpg'}
-                },
-                {
-                "pitch": 10.001788567309598, 
-                "yaw": 116.26287251191195,
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Guanyin%20(Goddess%20of%20Mercy)%20Giver%20of%20Children.jpg'}
-                },
-                {
-                "pitch": -4.402438881247944,
-                "yaw": 150.92971530634128,
-                "type": "info",
-                "text":"'May the virtues planted in the heart at this sanctuary bring blessedness and wisdom to the children'",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'May%20the%20virtues%20planted%20in%20the%20heart%20at%20this%20sanctuary%20bring%20blessedness%20and%20wisdom%20to%20the%20children.jpg'}
-                },
-                {
-                "pitch": 6.513174501869093, 
-                "yaw": 164.20020726252744,
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Part%20of%20Eighteen%20Arhats.jpg'}
-                },
-                {
-                "pitch": 10.441151884870083,
-                "yaw": -177.0720202071335, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Part%20of%20Eighteen%20Arhats2.jpg'}
-                },
-                {
-                "pitch": 7.798195659889838, 
-                "yaw": 81.3360208233139, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Part%20of%20Eighteen%20Arhats3.jpg'}
-                },
-                {
-                "pitch": 11.167145965701028, 
-                "yaw":56.91753103745691, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Part%20of%20Eighteen%20Arhats4.jpg'}
-                },
-                {
-                "pitch": 9.478170887554018,
-                "yaw": 43.28444140533668,
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Part%20of%20Eighteen%20Arhats5.jpg'}
-                },
-                {
-                "pitch": -4.402438881247944,
-                "yaw": 94.03272199228991,  
-                "type": "info",
-                "text":"'She gives them the children from the Buddha land that they might be seeds of a good family to come",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'She%20gives%20them%20the%20children%20from%20the%20Buddha%20land%20that%20they%20might%20be%20seeds%20of%20a%20good%20family%20to%20come.jpg'}
-                },
-                {
-                "pitch": -19.737119852426346,
-                "yaw": -31.440639405290437,
-                "type": "scene",
-                "text": "G. Main Hall South",
-                "sceneId": "main-hall-south",
-                "clickHandlerFunc" : toMainHallSouth,
-                },
-                {
-                "pitch": -19.737119852426346,
-                "yaw": -76.39657570180252,
-                "type": "scene",
-                "text": "E. Dragon King Temple",
-                "sceneId": "dragon-king-temple",
-                "clickHandlerFunc" : toDragonKingTemple,
-                },
-
-            ]
-    },
-    "main-hall-south":{
-        "title":"Main Hall South",
-        "type": "equirectangular",
-        "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/MainHallSouthjpg.jpg",
-        //angle range of horizontal view
-        "haov": 360,
-        //angle range of vertical view
-        "vaov": 75.9,
-        //vertical angle of the whole panorama
-        "vOffset": 0,
-        //default zoom-in control
-        "hfov": 90,
-       // "hotSpotDebug":true,
-        "autoLoad":true,
-        "minPitch":-30,
-        "maxPitch":30,
-        "hotSpots": [
-            {
-                "pitch": 6.164731074535975, 
-                "yaw": -148.26922490986692, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Gods%20in%20charge%20of%20Bureau%20of%20Punishing%20the%20Evil.jpg'}
-                },
-                {
-                "pitch": 4.286860984466831,
-                "yaw": 128.58607719394493, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Gods%20in%20charge%20of%20Bureau%20of%20Rewarding%20the%20Good.jpg'}
-                },
-                {
-                "pitch": 1.001201026076695, 
-                "yaw": 137.71020078831026, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Scene%20from%20Hell2.1.jpg'}
-                },
-                {
-                "pitch": -0.6721950707576663, 
-                "yaw": -154.46113125287667, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Scene%20of%20Hell4.jpg'}
-                },
-                {
-                "pitch": 1.6333437946016556, 
-                "yaw": 142.17603521229054,
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Scene%20of%20legend-Buying%20Fish%20and%20Releasing%20Them%20to%20Live.jpg'}
-                },
-                {
-                "pitch": 5.242001101751065, 
-                "yaw": -153.15395840572432, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Scene%20of%20legend-Sister%20Mei%20Gets%20Justice.jpg'}
-                },
-                {
-                "pitch": -13.255983097065318,
-                "yaw": -178.92423187059416,
-                "type": "scene",
-                "text": "F. Bearing Children Cloister",
-                "sceneId": "bearing-children-cloister",
-                "clickHandlerFunc" : toBearingChildrenCloister,
-                },
-                {
-                "pitch": -13.255983097065318,
-                "yaw": 160.9273769269298,
-                "type": "scene",
-                "text": "H. Main Hall North",
-                "sceneId": "main-hall-north",
-                "clickHandlerFunc" : toMainHallNorth,
-                },
-
-            ]
-    },
-    "main-hall-north":{
-        "title":"Main Hall South",
-        "type": "equirectangular",
-        "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/MainHallNorth.jpg",
-        //angle range of horizontal view
-        "haov": 360,
-        //angle range of vertical view
-        "vaov": 75.9,
-        //vertical angle of the whole panorama
-        "vOffset": 0,
-        //default zoom-in control
-        "hfov": 90,
-        //"hotSpotDebug":true,
-        "autoLoad":true,
-        "minPitch":-30,
-        "maxPitch":30,
-        "hotSpots": [
-            {
-                "pitch": 14.255725460393649, 
-                "yaw": 113.91911337952106,  
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Bell.jpg'}
-                },
-                {
-                "pitch": 8.660748129750703, 
-                "yaw": 143.48687435586862, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Devil%20King%20in%20charge%20of%20animals%20and%20Devil%20King%20of%20Lightning.jpg'}
-                },
-                {
-                "pitch": 5.913811010863986, 
-                "yaw":152.90610264477826, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Devil%20King%20of%20Great%20Puriy%20and%20Ox-head.jpg'}
-                },
-                {
-                "pitch": 7.195732661954577,  
-                "yaw":18.823564236085303,
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Devil%20King%20of%20Kind%20Heart%20and%20Devil%20King%20of%20Ingesting%20Poison.jpg'}
-                },
-                {
-                "pitch": 7.406272429773132, 
-                "yaw": 167.09202031491208, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Devil%20servant%20and%20the%20Judge.jpg'}
-                },
-                {
-                "pitch": 5.245861140996582, 
-                "yaw": 53.60608951140824,
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Drum.jpg'}
-                },
-                {
-                "pitch": 7.2400896042040115, 
-                "yaw": 9.524221210999485, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Horse-face%20and%20Devil%20King%20of%20Thousand%20Eyes.jpg'}
-                },
-                {
-                "pitch": -23.271244371404933,
-                "yaw": 92.38777493469667,  
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Liu%20Guanglin%20praying%20for%20divination.jpg'}
-                },
-                {
-                "pitch": 12.899353150969917,
-                "yaw": 81.43715122252252, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20City%20God%20statue.jpg'}
-                },
-                {
-                "pitch":13.685673226373629, 
-                "yaw": 91.52788732259427, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20City%20God%20statue1.jpg'}
-                },
-                {
-                "pitch": 13.685673226373629,
-                "yaw":70.78679021210479,
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20City%20God%20statue2.jpg'}
-                },
-                {
-                "pitch": 0.30228176267751217, 
-                "yaw":75.12299994696417, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20City%20God%20statue3.jpg'}
-                },
-                {
-                "pitch": 7.744158096469673, 
-                "yaw": 84.98504490154954, 
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20City%20God%20statue4.jpg'}
-                },
-                {
-                "pitch": 18.043501812314467,
-                "yaw": 81.43715122252252,
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20City%20God%20statue5.jpg'}
-                },
-                {
-                "pitch": 19.977962993774874,
-                "yaw": 81.43715122252252, 
-                "type": "info",
-                "text":"'聰明正直'",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'Overview%20of%20City%20God%20statue6.jpg'}
-                },
-                {
-                    "pitch": 22.977962993774874,
-                    "yaw": 81.43715122252252, 
-                    "type": "info",
-                    "clickHandlerFunc" : expandImg,
-                    "clickHandlerArgs" : {"text":'Overview%20of%20City%20God%20statue7.jpg'}
-                    },
-    
-                {
-                "pitch": 9.863888085279351,
-                "yaw": -4.351901274330679,
-                "type": "info",
-                "clickHandlerFunc" : expandImg,
-                "clickHandlerArgs" : {"text":'White%20Impermanence%20and%20Black%20Impermanence.jpg'}
-                },
-            {
-                "pitch": -17.28690689538847,
-                "yaw": -116.21337510940853, 
-                "type": "scene",
-                "text": "G. Main Hall South",
-                "sceneId": "main-hall-south",
-                "clickHandlerFunc" : toMainHallSouth,
-                },
-                {
-                "pitch": -17.28690689538847, 
-                "yaw": -84.2973172908757, 
-                "type": "scene",
-                "text": "I. Rear Hall",
-                "sceneId": "rear-hall",
-                "clickHandlerFunc" : toRearHall,
-                },
-
-            ]
-    },
-    "rear-hall":{
-        "title":"Rear Hall",
-        "type": "equirectangular",
-        "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama/panorama-pictures/RearHall.jpg",
-        //angle range of horizontal view
-        "haov": 360,
-        //angle range of vertical view
-        "vaov": 75.9,
-        //vertical angle of the whole panorama
-        "vOffset": 0,
-        //default zoom-in control
-        "hfov": 90,
-        //"hotSpotDebug":true,
-        "autoLoad":true,
-        "minPitch":-30,
-        "maxPitch":30,
-        "hotSpots": [
-            {
-            "pitch": 15.257378891726594,
-            "yaw": 175.15017282066106, 
-            "type": "info",
-            "clickHandlerFunc" : expandImg,
-            "clickHandlerArgs" : {"text":'City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife.jpg'}
+                "text": "D2. Hailin Court -- Shrine of Lord Guan, Guan Sheng Ci",
+                "sceneId": "D2",
+                "clickHandlerFunc" : toD2,
             },
             {
-            "pitch": -7.372190600571965, 
-            "yaw": 174.57550165300128, 
-            "type": "info",
-            "clickHandlerFunc" : expandImg,
-            "clickHandlerArgs" : {"text":'City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife1.jpg'}
-            },
-            {
-            "pitch": -7.372190600571965, 
-            "yaw": 163.80193828625784,
-            "type": "info",
-            "clickHandlerFunc" : expandImg,
-            "clickHandlerArgs" : {"text":'City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife2.jpg'}
-            },
-            {
-            "pitch": -7.372190600571965,  
-            "yaw": -174.63752814798087,
-            "type": "info",
-            "clickHandlerFunc" : expandImg,
-            "clickHandlerArgs" : {"text":'City%20God%20parents%20in%20the%20middle%20accompanied%20by%20City%20God%20and%20his%20wife3.jpg'}
-            },
-            {
-            "pitch": 35.946180255148214,
-            "yaw": 175.28319419693827, 
-            "type": "info",
-            "text":"'Eternal beneficence left on the people'<br>'遺愛在民'",
-            "clickHandlerFunc" : expandImg,
-            "clickHandlerArgs" : {"text":'Eternal%20beneficence%20left%20on%20the%20people.jpg'}
-            },
-            {
-            "pitch":15.424777474073194,
-            "yaw": -4.360518210103862,
-            "type": "info",
-            "clickHandlerFunc" : expandImg,
-            "clickHandlerArgs" : {"text":'Model%20of%20the%20city%20god%20temple%20for%20parade.jpg'}
-            },
-            {
-            "pitch": 9.867302627548824,
-            "yaw": 150.84018696061997, 
-            "type": "info",
-            "text":"'Placard for parade-Heaven knows, earth knows, say not that no one knows'<br>'天知地知，何謂無知'",
-            "clickHandlerFunc" : expandImg,
-            "clickHandlerArgs" : {"text":'Placard%20for%20parade-Heaven%20knows,%20earth%20knows,%20say%20not%20that%20no%20one%20knows.jpg'}
-            },
-            {
-            "pitch": 9.867302627548824,
-            "yaw": -159.2840224452527, 
-            "type": "info",
-            "text":"'Placard for parade-Whether good or bad, everything gets its proper reward'<br>'善報惡報，終須有報'",
-            "clickHandlerFunc" : expandImg,
-            "clickHandlerArgs" : {"text":'Placard%20for%20parade-Whether%20good%20or%20bad,%20everything%20gets%20its%20proper%20reward.jpg'}
-            },
-            {
-            "pitch": -21.39883715325066,
-            "yaw": -4.244629189025391,
-            "type": "scene",
-            "text": "H. Main Hall North",
-            "sceneId": "main-hall-north",
-            "clickHandlerFunc" : toMainHallNorth,
+                "pitch": -5.707430733660536, 
+                "yaw": 142.53051082553577,
+                "type": "scene",
+                "text":"C. Returning Dragon Bridge, Huilong Qiao",
+                "sceneId": "C",
+                "clickHandlerFunc" : toC,
             },
             
-
+            {
+                "pitch": -15.215655784527485,
+                "yaw": 0.7533702205573594,
+                "type": "scene",
+                "text":"E. Path between Sea and Unicorn Chamber and Guodong Primary School",
+                "sceneId": "E",
+                "clickHandlerFunc" : toE,
+                },
+              
+                {
+                "pitch":11.485475461189928, 
+                "yaw": 145.9436513290398, 
+                "type": "info",
+                "clickHandlerFunc" : expandImg,
+                "clickHandlerArgs" : {"text":'Overview%20of%20Hailin%20Court.JPG'}
+                },
+              
             ]
-    },
+        },
+    
+        "D2":{
+            "title":"D2. Hailin Court -- Shrine of Lord Guan, Guan Sheng Ci",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/D2.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+           //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+            
+                    {
+                    "pitch": -11.868629019937973, 
+                    "yaw": 88.31877844670032, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'DSCN1553.JPG'}
+                    },
+                    {
+                    "pitch": 17.34877089516667,
+                    "yaw": 14.20576797764312, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'DSCN1556.JPG'}
+                    },
+                    {
+                    "pitch": -12.462074996692106,  
+                    "yaw": 136.61035562271317,
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Introduction%20to%20Hailin%20Court%20in%20Chinese%20and%20English%20.JPG'}
+                    },
+                    {
+                    "pitch":27.416541860389085,
+                    "yaw": -142.75631508325478, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Looking%20out%20from%20the%20court%20.JPG'}
+                    },
+                    {
+                    "pitch": 2.394160340994728, 
+                    "yaw": 13.0273653855892, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'P0002790.JPG'}
+                    },
+                    {
+                    "pitch": 17.43026419788107, 
+                    "yaw": -2.094543035674941,
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'P0002791.JPG'}
+                    },
+                    {
+                    "pitch": -10.201650585528876, 
+                    "yaw": -59.130149637151526, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'P0002793.JPG'}
+                    },
+                    {
+                    "pitch": -8.44607110224642,
+                    "yaw":  -39.05361049140934, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'P0002794.JPG'}
+                    },
+                    {
+                    "pitch": -6.725361249449086, 
+                    "yaw":  53.43691376951663,
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'P0002795.JPG'}
+                    },
+                    {
+                    "pitch": -7.810267986283563, 
+                    "yaw": 74.47906207967947, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'P0002796.JPG'}
+                    },
+                    {
+                    "pitch":23.84237039264124,
+                    "yaw": 114.25803091291996,
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Record%20of%20the%20renovation%20of%20Hailin%20Court%20in%201994%20.JPG'}
+                    },   
+            {
+                "pitch": -20.74250591486505,
+                "yaw":  115.6584025415313,
+                "type": "scene",
+                "text": "D1 Hailin Court--exterior",
+                "sceneId": "D1",
+                "clickHandlerFunc" : toD1,
+            },
+            {
+                "pitch": -23.55951094876721, 
+                "yaw": -77.25226339342346,
+                "type": "scene",
+                "text":"D3 Hailin Court -- Chamber of Guanyin of the Southern Ocean Nanhai Guanyin Ge",
+                "sceneId": "D3",
+                "clickHandlerFunc" : toD3,
+            }
+            ]
+        },
+
+        "D3":{
+            "title":"D3. Hailin Court -- Chamber of Guanyin of the Southern Ocean Nanhai Guanyin Ge",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/D3.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+                {
+                    "pitch": 1, 
+                    "yaw": 1, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'P0002798.JPG'}
+                    },
+                    {
+                    "pitch":  5.151257690414573,
+                    "yaw": -98.2509217745344, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'P0002799.JPG'}
+                    },   
+            {
+                "pitch": -21.391706106077184,
+                "yaw": 40.0319196510468,
+                "type": "scene",
+                "text": "D2. Hailin Court -- Shrine of Lord Guan, Guan Sheng Ci",
+                "sceneId": "D2",
+                "clickHandlerFunc" : toD2,
+            },
+            ]
+        },
+
+        "E":{
+            "title":"E. Path between Sea and Unicorn Chamber and Guodong Primary School",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/E.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+                {
+                    "pitch": 9.067050007264166,
+                    "yaw": 53.024768243799144,
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Overview%20of%20the%20path%20.JPG'}
+                    },  
+            {
+                "pitch": -2.028715927162636, 
+                "yaw":-158.85376649216724,
+                "type": "scene",
+                "text": "D1. Hailin Court, Hailin Ge",
+                "sceneId": "D1",
+                "clickHandlerFunc" : toD1,
+            },
+            ]
+        },
+        "F1":{
+            "title":"F. He Lineage Ancestral Hall, He Shi Zong Ci",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/F1.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+                
+                    {
+                    "pitch": 28.5808346408227, 
+                    "yaw": -74.33006435260864, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Entrance%20door%20of%20the%20ancestral%20hall%20.JPG'}
+                    },
+                    {
+                    "pitch": 28.5808346408227,
+                    "yaw": -74.90517549884206, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Front%20view%20of%20the%20ancestral%20hall%20.JPG'}
+                    },
+                    {
+                    "pitch": 13.32160815069342,   
+                    "yaw": -114.1125206287426, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Overview%20of%20the%20ancestral%20hall.JPG'}
+                    },
+
+                    
+            {
+                "pitch": -17.76186196324729, 
+                "yaw": -74.57667956621412,
+                "type": "scene",
+                "text": "F2. He Lineage Ancestral Hall, Opera Stage",
+                "sceneId": "F2",
+                "clickHandlerFunc" : toF2,
+            },
+            {
+                "pitch": -16.537738954383254,
+                "yaw": -161.61472158806998,
+                "type": "scene",
+                "text": "G. Between He Lineage Ancestral Hall and Xinwu Li",
+                "sceneId": "G",
+                "clickHandlerFunc" : toG,
+            }
+            ]
+        },
+
+        "F2":{
+            "title":"F. He Lineage Ancestral Hall, He Shi Zong Ci",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/F2.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+           // "hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+                {
+                    "pitch": 0.45411403522772253,
+                    "yaw":107.68797592083968, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Chinese%20introduction%20to%20the%20ancestral%20hall%20.JPG'}
+                    },
+                    {
+                    "pitch": 10.209528328342728, 
+                    "yaw": -37.76764220347279, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Looking%20to%20the%20east%20.JPG'}
+                    },
+                    {
+                    "pitch": 21.31376442964729, 
+                    "yaw": -118.21799782865668, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Looking%20to%20the%20north%20.JPG'}
+                    },
+                    {
+                    "pitch": 20.443669624719085, 
+                    "yaw": -92.50129204786818, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Looking%20to%20the%20northeast%20.JPG'}
+                    },
+                    
+                    {
+                    "pitch":  11.454181631826536, 
+                    "yaw":  -156.08682997630933, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Looking%20to%20the%20northwest%20.JPG'}
+                    },
+                    {
+                    "pitch":1.435191064141773, 
+                    "yaw": 141.54844730157495, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Looking%20to%20the%20west%20.JPG'}
+                    },
+                    {
+                    "pitch":23.664210244194347, 
+                    "yaw": 83.98997574513362, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Overview%20of%20the%20opera%20stage%20.JPG'}
+                    },
+                    {
+                    "pitch":32.59231945105343, 
+                    "yaw": 43.646313840880794,  
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Painted%20ceiling%20of%20the%20opera%20stage%20.JPG'}
+                    },
+                    
+            {
+                "pitch": -26.2051980096906, 
+                "yaw": -132.94214838327753,
+                "type": "scene",
+                "text": "F1. He Lineage Ancestral Hall--exterior",
+                "sceneId": "F1",
+                "clickHandlerFunc" : toF1,
+            },
+            {
+                "pitch": -25.35756402588391, 
+                "yaw": -103.29893404842,
+                "type": "scene",
+                "text": "F3. He Lineage Ancestral Hall, Main Hall",
+                "sceneId": "F3",
+                "clickHandlerFunc" : toF3,
+            }
+            ]
+        },
+
+        "F3":{
+            "title":"F. He Lineage Ancestral Hall, He Shi Zong Ci",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/F3.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+           // "hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+                
+                    {
+                    "pitch":10.72038659632975, 
+                    "yaw": -104.28443858104609 , 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'001527.jpg'}
+                    },
+                 
+                    {
+                    "pitch": 9.340544796712408, 
+                    "yaw":  -91.7870496094317,
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'001876.jpg'}
+                    },
+                    
+                    {
+                    "pitch": 19.84322069888327, 
+                    "yaw":169.17187024166958, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'DSCN6921.JPG'}
+                    },
+                    {
+                    "pitch": -4.175119265234489, 
+                    "yaw": 47.42869458035628, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'DSCN7085.JPG'}
+                    },
+                    {
+                    "pitch": 24.33505023338629, 
+                    "yaw":  47.33088094387093, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'DSCN7086.JPG'}
+                    },
+                    {
+                    "pitch": 8.306790371128777, 
+                    "yaw": -158.9533518885067, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'DSCN7149.JPG'}
+                    },
+                    {
+                    "pitch": 0.5713935321657473, 
+                    "yaw": -130.01762010202413, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Excert%20of%20the%20words%20of%20Chairman%20Mao%20.JPG'}
+                    },
+                    
+               
+                    {
+                    "pitch": 33.44249146085183,  
+                    "yaw": -81.93558110489926, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'originally%20erected%20for%20He%20Chengqin.jpg'}
+                    },
+                
+                    {
+                    "pitch": 24.280929354175832, 
+                    "yaw": 164.8899677078311, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Plaque%20`Descendants%20of%20the%20people%20of%20Huai%20and%20Ge`..jpg'}
+                    },
+                    {
+                    "pitch": 24.03288140752773, 
+                    "yaw": -90.31180112339801, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Plaque%20`First%20Ranking%20Provincial%20Graduate`,.jpg'}
+                    },
+                    {
+                    "pitch": 9.129385236785462, 
+                    "yaw": -156.6161470527449 , 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Plaque%20`One%20whose%20Virtue%20Is%20Highly%20Respected%20,.jpg'}
+                    },
+                    {
+                    "pitch": 30.869224999247656, 
+                    "yaw": -153.34577517237898 , 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Plaque%20`Provincial%20Graduate`,.jpg'}
+                    },
+                    
+                   
+            {
+                "pitch": -24.899794024046393,
+                "yaw":23.40475318491977,
+                "type": "scene",
+                "text": "F2. He Lineage Ancestral Hall, Opera Stage",
+                "sceneId": "F2",
+                "clickHandlerFunc" : toF2,
+            },
+            {
+                "pitch":-19.17656697778071, 
+                "yaw": 79.05658262239902,
+                "type": "scene",
+                "text": "F4. He Lineage Ancestral Shrine, Back Hall",
+                "sceneId": "F4",
+                "clickHandlerFunc" : toF4,
+            }
+            ]
+        },
+
+        "F4":{
+            "title":"F. He Lineage Ancestral Hall, He Shi Zong Ci",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/F4.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+           // "hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+                
+                    {
+                    "pitch": -16.472856879321238, 
+                    "yaw": -147.70793293395835, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'001972.jpg'}
+                    },
+                    
+                    {
+                    "pitch": -17.688803407455232,
+                    "yaw": 6.811574338124785,
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Closeup%20of%20the%20altar.jpg'}
+                    },
+                    {
+                    "pitch": -6.10267627070044, 
+                    "yaw": -41.13113144671718, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Closeup%20of%20the%20banners.jpg'}
+                    },
+                    
+                    {
+                    "pitch": 9.618376032057384,
+                    "yaw":  -76.12184226982265 , 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Coffins%20stored%20in%20the%20western%20wing.jpg'}
+                    },
+                    {
+                    "pitch": 21.228972934397184, 
+                    "yaw":  8.495363191630474, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'DSCN7129.JPG'}
+                    },
+                   
+                    {
+                    "pitch": 13.41531164612507, 
+                    "yaw": 94.59767546364321, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Overview%20of%20the%20eastern%20wing.jpg'}
+                    },
+                    {
+                    "pitch": 14.606631953322964, 
+                    "yaw": -175.2253225654768, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Overview%20of%20the%20south%20wall%20panel.jpg'}
+                    },
+                    {
+                    "pitch":  33.53563544826533,   
+                    "yaw": -3.6301478190149723, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Plaque,.jpg'}
+                    },
+                   
+                    {
+                    "pitch": 5.888581831167441,  
+                    "yaw": 129.33944415801452, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'The%20estern%20wing,%20facing%20south.jpg'}
+                    },
+            {
+                "pitch": -21.876063489256474,
+                "yaw": 147.2486951668639,
+                "type": "scene",
+                "text": "F3. He Lineage Ancestral Hall, Main Hall",
+                "sceneId": "F3",
+                "clickHandlerFunc" : toF3,
+            },
+            
+            ]
+        },
+
+
+        "G":{
+            "title":"G. Between He Lineage Ancestral Hall and Xinwu Li",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/G.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+           // "hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+                
+                    {
+                    "pitch": 9.99497106530154,  
+                    "yaw": -41.54862154881994, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Closeup%20of%20the%20hall.jpg'}
+                    },
+                   
+            {
+                "pitch":-19.77574221825997,
+                "yaw":  -21.958199019956936,
+                "type": "scene",
+                "text": "H1 Xinwu Li, Front Courtyard",
+                "sceneId": "H1",
+                "clickHandlerFunc" : toH1,
+            },
+            {
+                "pitch": -26.58528794474873, 
+                "yaw": 130.91757761892572,
+                "type": "scene",
+                "text": "F1. He Lineage Ancestral Hall--exterior",
+                "sceneId": "F1",
+                "clickHandlerFunc" : toF1,
+            }
+            ]
+        },
+        "H1":{
+            "title":"H. Xinwu Li",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/H1.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+                
+                    {
+                    "pitch": 9.447322417706294, 
+                    "yaw": 151.410527094575, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Left-hand%20side%20window%20of%20the%20eastern%20wing.jpg'}
+                    },
+                   
+                    {
+                    "pitch": 8.249928268271615,
+                    "yaw":166.93897528139317 , 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Right-hand%20side%20window%20of%20the%20eastern%20wing.jpg'}
+                    },
+            {
+                "pitch": -31.33414675067754,
+                "yaw": -106.23040330298603,
+                "type": "scene",
+                "text": "G. Between He Lineage Ancestral Hall and Xinwu Li",
+                "sceneId": "G",
+                "clickHandlerFunc" : toG,
+            },
+            {
+                "pitch": -23.66886437445998,
+                "yaw": 65.92947151229332,
+                "type": "scene",
+                "text": "H2. Xinwu Li, Back Courtyard",
+                "sceneId": "H2",
+                "clickHandlerFunc" : toH2,
+            }
+            ]
+        },
+        "H2":{
+            "title":"H. Xinwu Li",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/H2.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+            {
+                "pitch": -6.224028266500834,
+                "yaw": 85.91131837122502,
+                "type": "scene",
+                "text": "H1 Xinwu Li, Front Courtyard",
+                "sceneId": "H1",
+                "clickHandlerFunc" : toH1,
+            }
+            ]
+        },
+        "I":{
+            "title":"I. Arch of Chastity and Filial Piety, Jie Xiao Fang",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/I.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+           // "hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+               
+                    {
+                    "pitch":  1.362592920052081, 
+                    "yaw": -140.32874629899163 , 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Closeup%20of%20the%20base%20of%20the%20arch.jpg'}
+                    },
+                    
+                    {
+                    "pitch": 26.03336914902445,   
+                    "yaw": -118.67324038144245, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Middle%20part%20of%20the%20arch%20with%20inscriptions%20on%20the%20frame.jpg'}
+                    },
+                    {
+                    "pitch": 11.85512515290337, 
+                    "yaw":  -119.19560127908154, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Overview%20of%20the%20arch.jpg'}
+                    },
+            
+            ]
+        },
+        "J1":{
+            "title":"J. Temple of God of Literature, Wenchang Ge",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/J1.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+           // "hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+                    {
+                    "pitch": -24.017787690288003,  
+                    "yaw":  -2.64021378559264, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'SANY0010.JPG'}
+                    },
+                    {
+                    "pitch": -6.207660387925076, 
+                    "yaw": 37.18362749682103, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Statue%20of%20Earth%20God%20and%20his%20wife.jpg'}
+                    },
+                   
+            {
+                "pitch": -5.378471140677298, 
+                "yaw": -176.64950820791182,
+                "type": "scene",
+                "text": "J2. Temple of the God of Literature, Second Floor",
+                "sceneId": "J2",
+                "clickHandlerFunc" : toJ2,
+            }
+            ]
+        },
+        "J2":{
+            "title":"J2. Temple of the God of Literature, Second Floor",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/J2.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+           // "hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+               
+            
+                    {
+                    "pitch": 29.30195975613434,   
+                    "yaw": 48.11888499389317, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Statue%20of%20the%20God%20of%20Literature..jpg'}
+                    },
+      
+            {
+                "pitch": -30.246188460065195, 
+                "yaw": 6.105111087093789,
+                "type": "scene",
+                "text": "J1. Temple of God of Literature, Wenchang Ge",
+                "sceneId": "J1",
+                "clickHandlerFunc" : toJ1,
+            }
+            ]
+        },
+        "K1":{
+            "title":"K1. Precious Spring Inn, Exterior",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/K1.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+           // "hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+               
+                {
+                    "pitch": 3.7664898587742845,   
+                    "yaw": 44.24265900410747, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Exterior%20view%20of%20the%20inn.jpg'}
+                    },
+                    {
+                    "pitch": 23.517727984559478,  
+                    "yaw":  153.47556701479485, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Residential%20houses%20besides%20the%20inn.jpg'}
+                    },
+            {
+                "pitch": -14.394500036412335,
+                "yaw": 75.28959077572777,
+                "type": "scene",
+                "text": "K2. Precious Spring Inn, Front Hall",
+                "sceneId": "K2",
+                "clickHandlerFunc" : toK2,
+            },
+            
+            ]
+        },
+        "K2":{
+            "title":"K2. Precious Spring Inn, Front Hall",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/K2.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+           // "hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [      
+                       
+            {
+                "pitch": -27.413222709885357, 
+                "yaw": -124.16196356548528,
+                "type": "scene",
+                "text": "K3. Precious Spring Inn, Main Hall Front",
+                "sceneId": "K3",
+                "clickHandlerFunc" : toK3,
+            },
+            {
+                "pitch": -23.90568946762527, 
+                "yaw": 51.8501436996812,
+                "type": "scene",
+                "text": "K1. Precious Spring Inn, Exterior",
+                "sceneId": "K1",
+                "clickHandlerFunc" : toK1,
+            }
+            ]
+        },
+        "K3":{
+            "title":"K3. Precious Spring Inn, Main Hall Front",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/K3.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+               
+                {
+                    "pitch": -20.449726414187253, 
+                    "yaw": 77.32025549370842, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Bridge%20in%20the%20courtyard.jpg'}
+                    },
+                    {
+                    "pitch": -30.07162052718097,   
+                    "yaw": 26.6552444706252, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Closeup%20of%20the%20pillar%20base.jpg'}
+                    },
+                   
+                       
+            {
+                "pitch": -22.75397392078927, 
+                "yaw": -158.81987738224294,
+                "type": "scene",
+                "text": "K2. Precious Spring Inn, Front Hall",
+                "sceneId": "K2",
+                "clickHandlerFunc" : toK2,
+            },
+            {
+                "pitch":  -8.791590106978044,
+                "yaw": 74.71611188396186 ,
+                "type": "scene",
+                "text": "K4. Precious Spring Inn, Main Hall Back",
+                "sceneId": "K4",
+                "clickHandlerFunc" : toK4,
+            }
+            ]
+        },
+        "K4":{
+            "title":"K4. Precious Spring Inn, Main Hall Back",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/K4.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+           // "hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [    
+                       
+            {
+                "pitch": -24.250926689550322,
+                "yaw": 117.76026909930968 ,
+                "type": "scene",
+                "text": "K3. Precious Spring Inn, Main Hall Front",
+                "sceneId": "K3",
+                "clickHandlerFunc" : toK3,
+            },
+            ]
+        },
+
+        "L":{
+            "title":"L Upper Guodong, Community Hall Square",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/L.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+           // "hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+                {
+                    "pitch": 20.856734556711224, 
+                    "yaw": -105.69086666422496, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Overview%20of%20Community%20Hall.jpg'}
+                    },
+                    {
+                    "pitch": 13.820924311499848,   
+                    "yaw": 105.13170262853153, 
+                    "type": "info",
+                    "clickHandlerFunc" : expandImg,
+                    "clickHandlerArgs" : {"text":'Pond%20in%20front%20of%20Community%20Hall.jpg'}
+                    },
+                       
+            {
+                "pitch": -17.43907342980967, 
+                "yaw": 28.65387858948465 ,
+                "type": "scene",
+                "text": "M. Overview of Upper Guodong",
+                "sceneId": "M",
+                "clickHandlerFunc" : toM,
+            },
+            {
+                "pitch": -22.620970208124724, 
+                "yaw": -76.55513454725218,
+                "type": "scene",
+                "text": "K1. Precious Spring Inn, Exterior",
+                "sceneId": "K1",
+                "clickHandlerFunc" : toK1,
+            }
+            ]
+        },
+        "M":{
+            "title":"M. Overview of Upper Guodong",
+            "type": "equirectangular",
+            "panorama": "https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/panorama-pictures/M.jpg",
+            //angle range of horizontal view
+            "haov": 360,
+            //angle range of vertical view
+            "vaov": 75.9,
+            //vertical angle of the whole panorama
+            "vOffset": 0,
+            //default zoom-in control
+            "hfov": 90,
+            "minPitch":-30,
+            "maxPitch":30,
+            //"hotSpotDebug":true,
+            "autoLoad":true,
+            "hotSpots": [
+            {
+                "pitch": -10.84719569481934, 
+                "yaw": 119.89781737883638,
+                "type": "scene",
+                "text": "L. Upper Guodong, Community Hall Square",
+                "sceneId": "L",
+                "clickHandlerFunc" : toL,
+            }
+            ]
+        },
+       
 },
-});
+}
+);
 
 //set the vertical bounds for the moving range of the view
 //var bounds = [-30,30];
@@ -1134,152 +1277,390 @@ function expandImg(hotspot,txt){
     on(img);
 };
 
-function toFrontGate(){
+function toA(){
     var i;
     var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="A. Front Gate";
+    currentSceneTxt.innerText="A. West Gate, Ximen";
     var myCircles = document.getElementsByClassName('cls-1');
     for(i=0;i<myCircles.length;i++){
         myCircles[i].style.fill="#023859";
     }
-    var myCircle = document.getElementById('tangxi-A');
+    var myCircle = document.getElementById('guodong-A');
     myCircle.style.fill = "#F26E22";
-    v.loadScene("front-gate");
-    pageScene="frontGate";
+    v.loadScene("A");
+    pageScene="A";
     const agallery = <ReactGallery/>;
     ReactDOM.render(agallery, document.getElementById('react-gallery'));
 }
 
-function toOperaStage(){
+function toB(){
     var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="B. Opera Stage";
+    currentSceneTxt.innerText="B. Water Mouth (reservoir), Shuikou";
     var myCircles = document.getElementsByClassName('cls-1');
     var i;
     for(i=0;i<myCircles.length;i++){
         myCircles[i].style.fill="#023859";
     }
-    var myCircle = document.getElementById('tangxi-B');
+    var myCircle = document.getElementById('guodong-B');
     myCircle.style.fill = "#F26E22";
-    v.loadScene("opera-stage");
-    pageScene="operaStage";
+    v.loadScene("B");
+    pageScene="B";
     console.log(pageScene);
     const bgallery = <ReactGallery/>;
     ReactDOM.render(bgallery, document.getElementById('react-gallery'));
 }
 
-function toCourtyardNearStage(){
+function toC(){
     var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="C. Courtyard Near Stage";
+    currentSceneTxt.innerText="C. Returning Dragon Bridge, Huilong Qiao";
     var myCircles = document.getElementsByClassName('cls-1');
     var i;
     for(i=0;i<myCircles.length;i++){
         myCircles[i].style.fill="#023859";
     }
-    var myCircle = document.getElementById('tangxi-C');
+    var myCircle = document.getElementById('guodong-C');
     myCircle.style.fill = "#F26E22";
-    v.loadScene("courtyard-near-stage");
-    pageScene="courtyardNearStage";
+    v.loadScene("C");
+    pageScene="C";
     console.log(pageScene);
     const cgallery = <ReactGallery/>;
     ReactDOM.render(cgallery, document.getElementById('react-gallery'));
 }
 
-function toCourtyardNearMainHall(){
+function toD1(){
     var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="D. Courtyard Near Main Hall";
+    currentSceneTxt.innerText="D1. Hailin Court--exterior";
     var myCircles = document.getElementsByClassName('cls-1');
     var i;
     for(i=0;i<myCircles.length;i++){
         myCircles[i].style.fill="#023859";
     }
-    var myCircle = document.getElementById('tangxi-D');
+    var myCircle = document.getElementById('guodong-D');
     myCircle.style.fill = "#F26E22";
-    v.loadScene("courtyard-near-main-hall");
-    pageScene="courtyardNearMainHall";
+    v.loadScene("D1");
+    pageScene="D1";
     console.log(pageScene);
     const dgallery = <ReactGallery/>;
     ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
 }
 
-function toDragonKingTemple(){
+function toD2(){
     var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="E. Dragon King Temple";
+    currentSceneTxt.innerText="D2. Hailin Court -- Shrine of Lord Guan, Guan Sheng Ci";
     var myCircles = document.getElementsByClassName('cls-1');
     var i;
     for(i=0;i<myCircles.length;i++){
         myCircles[i].style.fill="#023859";
     }
-    var myCircle = document.getElementById('tangxi-E');
+    var myCircle = document.getElementById('guodong-D');
     myCircle.style.fill = "#F26E22";
-    v.loadScene("dragon-king-temple");
-    pageScene="dragonKingTemple";
-    console.log(pageScene);
-    const dgallery = <ReactGallery/>;
-    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
-}
-function toBearingChildrenCloister(){
-    var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="F. Bearing Children Cloister";
-    var myCircles = document.getElementsByClassName('cls-1');
-    var i;
-    for(i=0;i<myCircles.length;i++){
-        myCircles[i].style.fill="#023859";
-    }
-    var myCircle = document.getElementById('tangxi-F');
-    myCircle.style.fill = "#F26E22";
-    v.loadScene("bearing-children-cloister");
-    pageScene="bearingChildrenCloister";
+    v.loadScene("D2");
+    pageScene="D2";
     console.log(pageScene);
     const dgallery = <ReactGallery/>;
     ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
 }
 
-function toMainHallSouth(){
+function toD3(){
     var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="G. Main Hall South";
+    currentSceneTxt.innerText="D3  Hailin Court -- Chamber of Guanyin of the Southern Ocean Nanhai Guanyin Ge";
     var myCircles = document.getElementsByClassName('cls-1');
     var i;
     for(i=0;i<myCircles.length;i++){
         myCircles[i].style.fill="#023859";
     }
-    var myCircle = document.getElementById('tangxi-G');
+    var myCircle = document.getElementById('guodong-D');
     myCircle.style.fill = "#F26E22";
-    v.loadScene("main-hall-south");
-    pageScene="mainHallSouth";
+    v.loadScene("D3");
+    pageScene="D3";
     console.log(pageScene);
     const dgallery = <ReactGallery/>;
     ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
 }
 
-function toMainHallNorth(){
+function toE(){
     var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="H. Main Hall North";
+    currentSceneTxt.innerText="E. Path between Sea and Unicorn Chamber and Guodong Primary School";
     var myCircles = document.getElementsByClassName('cls-1');
     var i;
     for(i=0;i<myCircles.length;i++){
         myCircles[i].style.fill="#023859";
     }
-    var myCircle = document.getElementById('tangxi-H');
+    var myCircle = document.getElementById('guodong-E');
     myCircle.style.fill = "#F26E22";
-    v.loadScene("main-hall-north");
-    pageScene="mainHallNorth";
+    v.loadScene("E");
+    pageScene="E";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+function toF1(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="F1. He Lineage Ancestral Hall--exterior";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-F');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("F1");
+    pageScene="F1";
     console.log(pageScene);
     const dgallery = <ReactGallery/>;
     ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
 }
 
-function toRearHall(){
+function toF2(){
     var currentSceneTxt = document.getElementById('currentScene');
-    currentSceneTxt.innerText="I. Rear Hall";
+    currentSceneTxt.innerText="F2. He Lineage Ancestral Hall, Opera Stage";
     var myCircles = document.getElementsByClassName('cls-1');
     var i;
     for(i=0;i<myCircles.length;i++){
         myCircles[i].style.fill="#023859";
     }
-    var myCircle = document.getElementById('tangxi-I');
+    var myCircle = document.getElementById('guodong-F');
     myCircle.style.fill = "#F26E22";
-    v.loadScene("rear-hall");
-    pageScene="rearHall";
+    v.loadScene("F2");
+    pageScene="F2";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toF3(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="F3 He Lineage Ancestral Hall, Main Hall";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-F');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("F3");
+    pageScene="F3";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toF4(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="F4. He Lineage Ancestral Shrine, Back Hall";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-F');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("F4");
+    pageScene="F4";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toG(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="G. Between He Lineage Ancestral Hall and Xinwu Li";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-G');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("G");
+    pageScene="G";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toH1(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="H1. Xinwu Li, Front Courtyard";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-H');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("H1");
+    pageScene="H1";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toH2(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="H2. Xinwu Li, Back Courtyard";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-H');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("H2");
+    pageScene="H2";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toI(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="I. Arch of Chastity and Filial Piety, Jie Xiao Fang";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-I');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("I");
+    pageScene="I";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toJ1(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="J1. Temple of God of Literature, First Floor";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-J');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("J1");
+    pageScene="J1";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toJ2(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="J2. Temple of the God of Literature, Second Floor";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-J');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("J2");
+    pageScene="J2";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toK1(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="K1. Precious Spring Inn, Exterior";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-K');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("K1");
+    pageScene="K1";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toK2(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="K2. Precious Spring Inn, Front Hall";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-K');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("K2");
+    pageScene="K2";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toK3(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="K3. Precious Spring Inn, Main Hall Front";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-K');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("K3");
+    pageScene="K3";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toK4(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="K4. Precious Spring Inn, Main Hall Back";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-K');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("K4");
+    pageScene="K4";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toL(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="L. Upper Guodong, Community Hall Square";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-L');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("L");
+    pageScene="L";
+    console.log(pageScene);
+    const dgallery = <ReactGallery/>;
+    ReactDOM.render(dgallery, document.getElementById('react-gallery'));  
+}
+
+function toM(){
+    var currentSceneTxt = document.getElementById('currentScene');
+    currentSceneTxt.innerText="M. Overview of Upper Guodong";
+    var myCircles = document.getElementsByClassName('cls-1');
+    var i;
+    for(i=0;i<myCircles.length;i++){
+        myCircles[i].style.fill="#023859";
+    }
+    var myCircle = document.getElementById('guodong-M');
+    myCircle.style.fill = "#F26E22";
+    v.loadScene("M");
+    pageScene="M";
     console.log(pageScene);
     const dgallery = <ReactGallery/>;
     ReactDOM.render(dgallery, document.getElementById('react-gallery'));  

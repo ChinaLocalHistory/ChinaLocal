@@ -46,7 +46,7 @@ h4{
 /*basemap*/
 .basemap-container {
   padding:20px;
-  flex: 10%;
+  flex: 15%;
   text-align: center;
   max-height: 100%;
 }
@@ -55,7 +55,7 @@ h4{
 #pano-container {
   margin:0;
   padding: 0;
-  flex: 80%;
+  flex: 70%;
   height: auto;
 }
 
