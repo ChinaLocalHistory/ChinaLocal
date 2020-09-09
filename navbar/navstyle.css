@@ -26,13 +26,13 @@ float: left;
 font-size:2vw;
 color: white;
 text-align: center;
-padding: 0.1vw 0.3vw 0.2vw;
+padding: 0.1vw 0.3vw 0.1vw;
 text-decoration: none;
 }
 
 .navbar .logo{
 float: left;
-height: 2.2vw;
+height: 2.25vw;
 }
 .dropdown {
 float: left;
@@ -44,7 +44,7 @@ font-size: 2vw;
 border: none;
 outline: none;
 color: white;
-padding: 0.1vw 0.3vw 0.2vw;
+padding: 0.1vw 0.3vw 0.1vw;
 background-color: inherit;
 font-family: inherit;
 margin: 0;
