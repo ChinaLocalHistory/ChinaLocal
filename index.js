@@ -59,7 +59,7 @@ function GetMap() {
     infobox2.setMap(map);
     pin2.metadata = {
         title: 'Guodong Village 郭洞村',
-        description: ' <p>这里是郭洞村的简介</p><br><a href="#">Details</a>'
+        description: ' <p>这里是郭洞村的简介</p><br><a href="Guodong/menu/index.html">Details</a>'
     };
     Microsoft.Maps.Events.addHandler(pin2, 'click', pushpinClicked);
     
