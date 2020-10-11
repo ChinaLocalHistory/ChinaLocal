@@ -9,11 +9,11 @@
     <!-- pannellum css & javaScript -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-    
+
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="index.css">
- 
-    
+
+
     <!-- Load React. -->
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
@@ -35,22 +35,22 @@
     img {
       vertical-align: middle;
     }
-    
+
     /* Position the image container (needed to position the left and right arrows) */
     .gallery-container {
       position: relative;
     }
-    
+
     /* Hide the images by default */
     .mySlides {
       display: none;
     }
-    
+
     /* Add a pointer when hovering over the thumbnail images */
     .cursor {
       cursor: pointer;
     }
-    
+
     /* Next & previous buttons */
     .prev,
     .next {
@@ -67,19 +67,19 @@
       user-select: none;
       -webkit-user-select: none;
     }
-    
+
     /* Position the "next button" to the right */
     .next {
       right: 0;
       border-radius: 3px 0 0 3px;
     }
-    
+
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover,
     .next:hover {
       background-color: rgba(0, 0, 0, 0.8);
     }
-    
+
     /* Number text (1/3 etc) */
     .numbertext {
       color: #f2f2f2;
@@ -88,7 +88,7 @@
       position: absolute;
       top: 0;
     }
-    
+
     /* Container for image text */
     .caption-container {
       text-align: center;
@@ -96,24 +96,24 @@
       padding: 2px 16px;
       color: white;
     }
-    
+
     .row:after {
       content: "";
       display: table;
       clear: both;
     }
-    
+
     /* Six columns side by side */
     .column {
       float: left;
       width: 16.66%;
     }
-    
+
     /* Add a transparency effect for thumnbail images */
     .demo {
       opacity: 0.6;
     }
-    
+
     .active,
     .demo:hover {
       opacity: 1;
@@ -129,10 +129,10 @@
 
   <script>
   $(function(){
-    $("#nav-placeholder").load("../../navbar/index.html");
+    $("#nav-placeholder").load("../navbar/index.html");
   });
   </script>
-      
+
 
     <!-- overlay for expanded img -->
     <div id="overlay" onclick="off()" style="display:none">
@@ -207,51 +207,51 @@
         <div class="mySlides">
           <div class="numbertext">1 / 3</div>
           <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/O%20Lake%20Dawan%2C%20Dawan%20Hu/A%20swimming%20poor%20next%20to%20Lake%20Dawan.jpg" alt='A%20swimming%20poor%20next%20to%20Lake%20Dawan.jpg' style="width:100%"></div>
-          
+
           <div class="mySlides">
           <div class="numbertext">2 / 3</div>
           <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/O%20Lake%20Dawan%2C%20Dawan%20Hu/Lake%20Dawan%2C%20Dawan%20Hu%20.JPG" alt='Lake%20Dawan%2C%20Dawan%20Hu%20.JPG' style="width:100%"></div>
-          
+
           <div class="mySlides">
             <div class="numbertext">3 / 3</div>
             <img src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/O%20Lake%20Dawan%2C%20Dawan%20Hu/Overview%20of%20Lake%20Dawan.jpg" alt='Overview%20of%20Lake%20Dawan.jpg' style="width:100%"></div>
-          
+
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
 
         <div class="row">
           <div class="column">
             <img class="demo cursor" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/O%20Lake%20Dawan%2C%20Dawan%20Hu/A%20swimming%20poor%20next%20to%20Lake%20Dawan.jpg" style="width:100%" onclick="currentSlide(1) " alt='A%20swimming%20poor%20next%20to%20Lake%20Dawan'></div>
-            
+
             <div class="column">
             <img class="demo cursor" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/O%20Lake%20Dawan%2C%20Dawan%20Hu/Lake%20Dawan%2C%20Dawan%20Hu%20.JPG" style="width:100%" onclick="currentSlide(2) " alt='Lake%20Dawan%2C%20Dawan%20Hu%20'></div>
-            
+
             <div class="column">
             <img class="demo cursor" src="https://raw.githubusercontent.com/jw4590/TangxiCityGodTemple/master/panorama%20-%20Guodong/img/O%20Lake%20Dawan%2C%20Dawan%20Hu/Overview%20of%20Lake%20Dawan.jpg" style="width:100%" onclick="currentSlide(3) " alt='Overview%20of%20Lake%20Dawan.jpg'></div>
-            
-            
+
+
         </div>
       </div>
 
-      
-      
+
+
       <script>
       var slideIndex = 1;
       showSlides(slideIndex);
-      
+
       function plusSlides(n) {
         showSlides(slideIndex += n);
       }
-      
+
       function currentSlide(n) {
         showSlides(slideIndex = n);
       }
-      
+
       function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("demo");
-   
+
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
@@ -262,12 +262,12 @@
         }
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
-    
+
       }
       </script>
-          
+
     </div>
-    
+
   </div>
 
 </body>
