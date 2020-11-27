@@ -34,7 +34,7 @@
 
   <script>
   $(function(){
-    $("#nav-placeholder").load("../navbar/index.html");
+    $("#nav-placeholder").load("index.html");
   });
   </script>
 
@@ -48,7 +48,7 @@
     <!-- basemap container  -->
     <div class="basemap-container">
       <h2>Guodong Village</h2>
-      <h3 id="currentScene">E. Path between Sea and Unicorn Chamber and Guodong Primary School</h3>
+      <h3 id="currentScene">M. Overview of Upper Guodong</h3>
       <svg id="Layer_9" data-name="Layer 9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 335 738" height="95%" width="95%">
         <defs>
             <style>.cls-1{fill:#023859;stroke:#023859;}.cls-2{font-size:9.99px;fill:#fff;font-family:MyriadPro-Regular, Myriad Pro;}</style>
@@ -61,7 +61,7 @@
         <a href="Gallery-N.html">
         <ellipse class="cls-1" id="guodong-N" cx="206.56" cy="31.67" rx="9.98" ry="10.06"/>
         <text id="A-2" data-name="A" class="cls-2" transform="translate(203.35 34.65) scale(0.99 1)" >N</text></a>
-        <ellipse class="cls-1" id="guodong-M" cx="159.77" cy="725.54" rx="9.98" ry="10.06"onclick="toM()"/>
+        <ellipse class="cls-1" id="guodong-M" cx="159.77" cy="725.54" rx="9.98" ry="10.06"onclick="toM()" style="fill:#F26E22"/>
         <text id="A-3" data-name="A" class="cls-2" transform="translate(156.56 728.52) scale(0.99 1)" onclick="toM()">M</text>
         <ellipse class="cls-1" id="guodong-L" cx="189.63" cy="725.54" rx="9.98" ry="10.06" onclick="toL()"/>
         <text id="A-4" data-name="A" class="cls-2" transform="translate(186.42 728.52) scale(0.99 1)" onclick="toL()">L</text>
@@ -77,7 +77,7 @@
         <text id="A-9" data-name="A" class="cls-2" transform="translate(195.44 279.5) scale(0.99 1)" onclick="toG()">G</text>
         <ellipse class="cls-1" id="guodong-F" cx="163.56" cy="250.69" rx="9.98" ry="10.06" onclick="toF1()"/>
         <text id="A-10" data-name="A" class="cls-2" transform="translate(160.35 253.67) scale(0.99 1)" onclick="toF1()">F</text>
-        <ellipse class="cls-1" id="guodong-E" cx="215.72" cy="140.87" rx="9.98" ry="10.06" onclick="toE()"  style="fill:#F26E22"/>
+        <ellipse class="cls-1" id="guodong-E" cx="215.72" cy="140.87" rx="9.98" ry="10.06" onclick="toE()"/>
         <text id="A-11" data-name="A" class="cls-2" transform="translate(212.51 143.85) scale(0.99 1)" onclick="toE()">E</text>
         <ellipse class="cls-1" id="guodong-D" cx="197.71" cy="95.62" rx="9.98" ry="10.06" onclick="toD1()"/>
         <text id="A-12" data-name="A" class="cls-2" transform="translate(194.49 98.6) scale(0.99 1)" onclick="toD1()">D</text>
@@ -85,7 +85,7 @@
         <text id="A-13" data-name="A" class="cls-2" transform="translate(167.5 95.87) scale(0.99 1)" onclick="toC()">C</text>
         <ellipse class="cls-1" id="guodong-B" cx="117.68" cy="89.91" rx="9.98" ry="10.06" onclick="toB()"/>
         <text id="A-14" data-name="A" class="cls-2" transform="translate(114.47 92.89) scale(0.99 1)" onclick="toB()">B</text>
-        <ellipse class="cls-1" id="guodong-A" cx="95.49" cy="60.43" rx="9.98" ry="10.06" onclick="toA()" />
+        <ellipse class="cls-1" id="guodong-A" cx="95.49" cy="60.43" rx="9.98" ry="10.06" onclick="toA()"  />
         <text id="A-15" data-name="A" class="cls-2" transform="translate(92.28 63.41) scale(0.99 1)" onclick="toA()" >A</text>
     </svg>
     </div>
@@ -103,7 +103,7 @@
     <div id="react-gallery"></div>
 
 
-<script type="text/babel" src="js/index-E.js"></script>
+<script type="text/babel" src="js/index-M.js"></script>
 
 
 
